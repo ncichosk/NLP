@@ -5,12 +5,18 @@ Please find the homework assignment instructions [here](https://docs.google.com/
 ## Part 1
 * Unigram accuracy: 0.17666728590005573 0.17788729774967454
 * 5-gram accuracy: 0.5751439717629575 0.5684396503626558
-* Free response: For the unigram, the model will predict a space as the next character for all 100 characters. The 5-gram model predicts the following:
+* Free response:
+
+For the unigram, the model will predict a space as the next character for all 100 characters. The 5-gram model predicts the following:
 
 <BOS>"I'm not ready to go," said, "i wanted to the boy who listen the boy who listen the boy who listen the boy who listen the boy w
+
 <BOS>Lily and Max were best friends. One day, the boy who listen the boy who listen the boy who listen the boy who listen the boy who listen the
+
 <BOS>He picked up the juice and said, "i wanted to the boy who listen the boy who listen the boy who listen the boy who listen the 
+
 <BOS>It was raining, so happy and said, "i wanted to the boy who listen the boy who listen the boy who listen the boy who l
+
 <BOS>The end of the story was a little girl named lily was a little girl named lily was a little girl named lily was a little gir
 
 The 5-gram is better because it makes predictions based off of context rather than predicting the most common character every time.
