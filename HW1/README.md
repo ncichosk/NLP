@@ -8,7 +8,7 @@ Please find the homework assignment instructions [here](https://docs.google.com/
 * Free response:
 
 For the unigram, the model will predict a space as the next character for all 100 characters. The 5-gram model predicts the following:
-
+```
 <BOS>"I'm not ready to go," said, "i wanted to the boy who listen the boy who listen the boy who listen the boy who listen the boy w
 
 <BOS>Lily and Max were best friends. One day, the boy who listen the boy who listen the boy who listen the boy who listen the boy who listen the
@@ -18,7 +18,7 @@ For the unigram, the model will predict a space as the next character for all 10
 <BOS>It was raining, so happy and said, "i wanted to the boy who listen the boy who listen the boy who listen the boy who l
 
 <BOS>The end of the story was a little girl named lily was a little girl named lily was a little girl named lily was a little gir
-
+```
 The 5-gram is better because it makes predictions based off of context rather than predicting the most common character every time.
 
 ## Part 2
