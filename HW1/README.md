@@ -23,9 +23,14 @@ The 5-gram is better because it makes predictions based off of context rather th
 * LSTM accuracy: 0.6007802340702211 0.5994048726055421
 * Link to saved model: HW1/lstm_model.pth
 * Free response: 
-How does coherence compare between the vanilla RNN and LSTM? 
+***How does coherence compare between the vanilla RNN and LSTM?***
+
  - The LSTM is more coherent than the RNN in the sense that forms longer strings of words before it starts repeating the same thing over and over. Both still end up getting into loops at some point though.
-Concretely, how do the neural methods compare with the n-gram models?
+
+***Concretely, how do the neural methods compare with the n-gram models?***
+
  - The neural methods are much better than the n-gram models, especially as you want to add in more context. They are able to form words, which the n-gram model struggles with and handle new contexts a lot better than n-grams.
-What is still lacking? What could help make these models better?
+
+***What is still lacking? What could help make these models better?***
+
  - These models are still missing a sense of 'understanding' of the text beign fed in. All of them end up repeating the same series of characters at some point, though some models make it further than others.
