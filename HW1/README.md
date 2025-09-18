@@ -22,7 +22,8 @@ The 5-gram is better because it makes predictions based off of context rather th
 ## Part 3
 * LSTM accuracy: 0.6007802340702211 0.5994048726055421
 * Link to saved model: HW1/lstm_model.pth
-* Free response: 
+* Free response:
+
 ***How does coherence compare between the vanilla RNN and LSTM?***
 
  - The LSTM is more coherent than the RNN in the sense that forms longer strings of words before it starts repeating the same thing over and over. Both still end up getting into loops at some point though.
