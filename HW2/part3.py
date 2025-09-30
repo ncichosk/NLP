@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """
 Goal: Highest-probability parse using a PCFG, with POS tags (from your BiLSTM)
       as the terminal layer.
