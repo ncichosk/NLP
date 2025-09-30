@@ -67,7 +67,7 @@ class LSTMModel(nn.Module):
 		sym = self.vocab.denumberize(next_idx)
 		return state, sym
 
-	def fit(self, data, lr=0.001, epochs=10):
+	def fit(self, data, lr=0.001, epochs=11):
 		"""	TODO: This function is identical to fit() from part2.py. 
 			The only exception: the state to keep track is now the tuple (h, c) rather than just h. This means after initializing the state with the start state, detatch it from the previous computattion graph like this: `(state[0].detach(), state[1].detach())`"""
 		# 1. Initialize the optimizer. Use `torch.optim.Adam` with `self.parameters()` and `lr`.
