@@ -225,7 +225,7 @@ def read_rules(filename):
             else:
                 continue
 
-    return dict(binary_rules)
+    return dict(binary_rules), dict(preterm_rules)
 
 
 def reconstruct(label, i, k, backptr, sentence):
@@ -251,22 +251,33 @@ if __name__ == '__main__':
     if sys.argv[1] == "-f":
         file_name = sys.argv[2]
         tagged_input = tagging(filename=file_name, inp=None)
+    elif sys.argv[1] == "gold":
+      tagged_input = []
+      with open("Data/test.pos", 'r') as f:
+          for line in f:
+              line = line.strip()
+              if not line:
+                  continue
+              pairs = re.findall(r'\(([^,]+),\s*([^\)]+)\)', line)
+              sentence = [(word, tag) for word, tag in pairs]
+              tagged_input.append(sentence)
     else:
         inp_sentence = " ".join(sys.argv[1:])
         tagged_input = tagging(filename=None, inp=inp_sentence)
 
-    binary_rules = read_rules("rules.txt")
-    print(len(binary_rules))
+    binary_rules, preterm_rules = read_rules("rules.txt")
 
-    for sentence in tagged_input:
+    for sentence in tagged_input[:10]:
         n = len(sentence)
         chart = collections.defaultdict(dict)
         backptr = collections.defaultdict(dict)
         for i in range(n):
             word, pos = sentence[i]
-            span = (i, i + 1)
-            chart[span][pos] = 0.0 
-            backptr[span][pos] = word
+            terminal_key = pos + '_t'
+            if terminal_key in preterm_rules:
+                for lhs, log_prob in preterm_rules[terminal_key]:
+                    chart[(i, i + 1)][lhs] = log_prob
+                    backptr[(i, i + 1)][lhs] = word
 
         for i in range(n):
             span = (i, i+1)
