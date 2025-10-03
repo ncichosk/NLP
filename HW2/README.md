@@ -99,6 +99,7 @@ Log Probability: -5.4491
 * Free response:
 
 **Is there a difference in which sentences it fails to parse given gold tags vs. your tagger’s outputs? Why or why not?**
+
 The parser fails to parse a sentence with the gold tags when an unfarmiliar structure appears with a funky verb combo. This is simply a rule not existing in the sentence. When the LSTM tags this sentence, it does it in a more common way which has rules that can put it into a single sentence. The LSTM handles these stranger tags better by assigning more common tags, but fails when uncommon structures such as "What airline is this?" appear, because it is not as clear what the verb and noun in the sentence are compared to a simpler structuer such as "The dog chased the cat". This more confusing sentece structure inhibits both the tagger and the tree predictor, leading to errors in sentences.
 
 **Which ones does it do well on (i.e., match the true parse in test.trees), and why?**
