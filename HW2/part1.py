@@ -21,9 +21,10 @@ class BiLSTMTagger(nn.Module):
 		super().__init__()
 		self.words = utils.Vocab()
 		self.tags = utils.Vocab()
-		for item in data:
-			self.words.add(item[0])
-			self.tags.add(item[1])
+		for line in data:
+			for item in line:
+				self.words.add(item[0])
+				self.tags.add(item[1])
 		self.words.add('<UNK>')
 		self.tags.add('<UNK>')
 		"""TODO: Populate self.words and self.tags as two vocabulary objects using the Vocab class in utils.py.
@@ -129,13 +130,18 @@ class BiLSTMTagger(nn.Module):
 				sentence = torch.tensor(idxs, dtype=torch.long)
 				targets = [self.tags.numberize(t) for t in tags]
 
-				predicted = self.predict(sentence)
+				scores = self.forward(sentence)
+
+				predicted = self.predict(scores)
 				for pred_idx, target_idx in zip(predicted, targets):
 					if pred_idx == target_idx:
 						correct += 1
+					else:
+						print("Prd:")
+						print(model.tags.denumberize(pred_idx))
+						print("Targer:")
+						print(model.tags.denumberize(target_idx))
 					total += 1
-			print(correct)
-			print(total)
 			return correct / total
 
 
@@ -168,7 +174,8 @@ if __name__ == '__main__':
 	for i, sentence in enumerate(test_data[:10]):
 		words = [w for w, t in sentence]
 		idxs = torch.tensor([model.words.numberize(w.lower()) for w in words], dtype=torch.long).to(device)
-		predicted_tags = model.predict(idxs)
+		scores = model.forward(idxs)
+		predicted_tags = model.predict(scores)
 		predicted_tags = [model.tags.denumberize(idx) for idx in predicted_tags]
 		print(f"\nSentence {i+1}:")
 		print("Words:    ", words)

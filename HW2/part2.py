@@ -17,4 +17,35 @@ counts = collections.defaultdict(collections.Counter)
 			if len(node.children) == 1: # terminal rules
 				rhs = (node.label.split('_')[-1]+'_t',) # rhs = (NN_t,)
 """
-raise NotImplementedError
+for line in fileinput.input():
+    tree = trees.Tree.from_str(line.strip())
+    for node in tree.bottomup():
+        if len(node.children) == 0:
+            continue
+        lhs = node.label
+        
+        if len(node.children) == 1: # terminal rules
+             rhs = (node.label.split('_')[-1]+'_t',) # rhs = (NN_t,)
+        else:
+            rhs = tuple(child.label for child in node.children)
+
+        counts[lhs][rhs] += 1
+        
+probs = collections.defaultdict(dict)
+for lhs, rhs_counts in counts.items():
+    total = sum(rhs_counts.values())
+    for rhs, cnt in rhs_counts.items():
+        probs[lhs][rhs] = cnt / total
+
+cfg = collections.defaultdict(list)
+for lhs, rhs_dict in counts.items():
+    for rhs in rhs_dict:
+        cfg[rhs].append(lhs)
+        
+with open("rules.txt", "w") as f:
+    for lhs, rhs_probs in probs.items():
+        for rhs, prob in rhs_probs.items():
+            cnt = counts[lhs][rhs]
+            rhs_str = " ".join(rhs)
+            line = f"{lhs} -> {rhs_str} # prob={prob:.4f}\n"
+            f.write(line)

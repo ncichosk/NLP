@@ -153,3 +153,148 @@ for each line from stdin:
   else:
       print("")  # empty line if no parse
 """
+import sys
+import part1
+import utils
+import torch
+import re
+import math
+import collections
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+def tagging(filename = None, inp = None):
+    train_data = utils.read_pos_file('Data/train.pos')
+    model = part1.BiLSTMTagger(train_data, embedding_dim=128, hidden_dim=256).to(device)
+    model.fit(train_data)
+    tags = []
+
+    if filename != None:
+        for line in open(filename):
+            tokens = re.findall(r"\w+|[^\w\s]", line)
+            if len(tokens) == 0:
+                tags.append([])
+                continue
+            idxs = torch.tensor([model.words.numberize(w.lower()) for w in tokens], dtype=torch.long).to(device)
+            scores = model.forward(idxs)
+            line_tags = model.predict(scores)
+            line_tags = [model.tags.denumberize(idx) for idx in line_tags]
+            sentence = list(zip(tokens, line_tags))
+            tags.append(sentence)
+
+    elif inp != None:
+        words = inp
+        tokens = re.findall(r"\w+|[^\w\s]", words)
+        if len(tokens) == 0:
+            return [[]]
+        idxs = torch.tensor([model.words.numberize(w.lower()) for w in tokens], dtype=torch.long).to(device)
+        scores = model.forward(idxs)
+        line_tags = model.predict(scores)
+        line_tags = [model.tags.denumberize(idx) for idx in line_tags]
+        sentence = list(zip(tokens, line_tags))
+        tags.append(sentence)
+
+    return tags
+
+
+def read_rules(filename):
+    binary_rules = collections.defaultdict(list)
+    preterm_rules = collections.defaultdict(list)
+    nonterminals = set()
+
+    with open(filename, "r") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            m = re.match(r"(\S+)\s*->\s*(.+?)\s*#\s*prob\s*=\s*([0-9.eE-]+)", line)
+            if not m:
+                continue
+            lhs, rhs_str, prob_str = m.groups()
+            prob = float(prob_str)
+            rhs_symbols = rhs_str.split()
+            nonterminals.add(lhs)
+
+            if len(rhs_symbols) == 1:
+                POS = rhs_symbols[0]
+                preterm_rules[POS].append((lhs, math.log(prob)))
+            elif len(rhs_symbols) == 2:
+                B, C = rhs_symbols
+                binary_rules[(B, C)].append((lhs, math.log(prob)))
+                nonterminals.update([B, C])
+            else:
+                continue
+
+    return dict(binary_rules)
+
+
+def reconstruct(label, i, k, backptr, sentence):
+    bp = backptr[(i, k)][label]
+
+    if isinstance(bp, str):
+        return f"({label} {bp})"
+
+    if len(bp) == 1:
+        child_label = bp[0]
+        child_subtree = reconstruct(child_label, i, k, backptr, sentence)
+        return f"({label} {child_subtree})"
+
+    if len(bp) == 3:
+        left_label, j, right_label = bp
+        left_subtree  = reconstruct(left_label,  i, j, backptr, sentence)
+        right_subtree = reconstruct(right_label, j, k, backptr, sentence)
+        return f"({label} {left_subtree} {right_subtree})"
+    return "" 
+
+
+if __name__ == '__main__':
+    if sys.argv[1] == "-f":
+        file_name = sys.argv[2]
+        tagged_input = tagging(filename=file_name, inp=None)
+    else:
+        inp_sentence = " ".join(sys.argv[1:])
+        tagged_input = tagging(filename=None, inp=inp_sentence)
+
+    binary_rules = read_rules("rules.txt")
+    print(len(binary_rules))
+
+    for sentence in tagged_input:
+        n = len(sentence)
+        chart = collections.defaultdict(dict)
+        backptr = collections.defaultdict(dict)
+        for i in range(n):
+            word, pos = sentence[i]
+            span = (i, i + 1)
+            chart[span][pos] = 0.0 
+            backptr[span][pos] = word
+
+        for i in range(n):
+            span = (i, i+1)
+            added = True
+
+        for span_length in range(2, n + 1):
+            for i in range(n - span_length + 1):
+                k = i + span_length
+                span = (i, k)
+                for j in range(i + 1, k):
+                    left_span = (i, j)
+                    right_span = (j, k)
+
+                    for left_label, left_score in chart[left_span].items():
+                        for right_label, right_score in chart[right_span].items():
+                            rule_rhs = (left_label, right_label)
+                            if rule_rhs in binary_rules:
+                                for A, log_prob in binary_rules[rule_rhs]:
+                                    candidate_score = left_score + right_score + log_prob
+                                    if candidate_score > chart[span].get(A, -math.inf):
+                                        chart[span][A] = candidate_score
+                                        backptr[span][A] = (left_label, j, right_label)
+
+        full_span = (0, n)
+        if 'TOP' in chart[full_span]:
+            score = chart[full_span]['TOP']
+            tree_str = reconstruct('TOP', 0, n, backptr, sentence)
+            print(tree_str)
+            print(f"Log Probability: {score:.4f}", file=sys.stderr)
+        else:
+            print("") 
