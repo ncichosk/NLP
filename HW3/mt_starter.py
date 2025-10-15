@@ -88,11 +88,14 @@ class Encoder(torch.nn.Module):
         # ! TIP Apply LayerNorm *before* each residual connection, but remember that in the residual connection (old + new), old is pre-LayerNorm.
         # ! TIP Residual connection is implemented simply with the + operator.
         # ! HINT For example, for the FFN, this would look like: encs = encs + self.ff(self.norm(encs)))
-        emb = self.W_norm1(src_embs)
-        attn = src_embs + self.self_attention(emb, emb, emb)
-        attn = src_embs + self.dropout(attn)
+        emb_norm = self.W_norm1(src_embs)
+        attn_output = self.self_attention(emb_norm, emb_norm, emb_norm)
+        attn = src_embs + self.dropout(attn_output)
+
         attn_norm = self.W_norm2(attn)
-        ff = attn + self.ff(attn_norm)
+        ff_output = self.ff(attn_norm)
+        ff = attn + self.dropout(ff_output) 
+
         return ff
 
 
@@ -119,12 +122,18 @@ class Decoder(torch.nn.Module):
         # ! TIP Same tips and hints as in Encoder
         # ! TIP Decoder self-attention operates on tgt_encs (remember to pass in the mask!).
         # ! TIP Cross-attention operates on tgt_encs (for query) AND src_encs (for key and value). Only tgt_encs gets LayerNorm-ed in this case. No mask for cross-attention.
-        emb = self.self_attention(self.W_norm1(tgt_embs), self.W_norm1(tgt_embs), self.W_norm1(tgt_embs), mask=causal_mask)
-        attn = tgt_embs + emb
-        attn = emb + self.dropout(attn)
-        cross_attn = attn + self.cross_attention(self.W_norm2(attn), src_encs, src_encs)
+        tgt_embs_norm = self.W_norm1(tgt_embs)
+        self_attn_output = self.self_attention(tgt_embs_norm, tgt_embs_norm, tgt_embs_norm, mask=causal_mask)
+        attn = tgt_embs + self.dropout(self_attn_output)
+
+        attn_norm = self.W_norm2(attn)
+        cross_attn_output = self.cross_attention(attn_norm, src_encs, src_encs)
+        cross_attn = attn + self.dropout(cross_attn_output)
+
         cross_attn_norm = self.W_norm3(cross_attn)
-        ff = cross_attn + self.ff(cross_attn_norm)
+        ff_output = self.ff(cross_attn_norm)
+        ff = cross_attn + self.dropout(ff_output)
+        
         return ff
 
 class Model(torch.nn.Module):
