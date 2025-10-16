@@ -23,7 +23,7 @@ class Embedding(torch.nn.Module):
         # TODO: Apply initial embedding weights to x first, then positional encoding.
         W_e = self.token_embedding(x)
         W_pe = self.positional_encoding(W_e)
-        return W_e + W_pe
+        return W_pe
 
 
 class FeedForward(torch.nn.Module):
@@ -33,11 +33,12 @@ class FeedForward(torch.nn.Module):
         # ! TIP use torch.nn.Linear
         self.W1 = torch.nn.Linear(embed_dim, ff_dim)
         self.W2 = torch.nn.Linear(ff_dim, embed_dim)
+        self.relu = torch.nn.ReLU()
 
     def forward(self, x):
         # TODO Apply the FFN equation.
         # ! TIP use torch.nn.ReLU
-        forward = torch.nn.ReLU()(self.W1(x))
+        forward = self.relu(self.W1(x))
         forward = self.W2(forward)
         return forward
 
@@ -81,7 +82,7 @@ class Encoder(torch.nn.Module):
         self.W_norm2 = LayerNorm(embed_dim)
         self.self_attention = MaskedAttention(embed_dim)
         self.ff = FeedForward(embed_dim, ff_dim)
-        self.dropout = torch.nn.Dropout(p=0.1)
+        self.W_norm3 = LayerNorm(embed_dim)
 
     def forward(self, src_embs):
         # TODO: Pass src_embs through each module of the encoder block.
@@ -90,13 +91,13 @@ class Encoder(torch.nn.Module):
         # ! HINT For example, for the FFN, this would look like: encs = encs + self.ff(self.norm(encs)))
         emb_norm = self.W_norm1(src_embs)
         attn_output = self.self_attention(emb_norm, emb_norm, emb_norm)
-        attn = src_embs + self.dropout(attn_output)
+        attn = src_embs + attn_output
 
         attn_norm = self.W_norm2(attn)
         ff_output = self.ff(attn_norm)
-        ff = attn + self.dropout(ff_output) 
+        ff = attn + ff_output
 
-        return ff
+        return self.W_norm3(ff)
 
 
 class Decoder(torch.nn.Module):
@@ -113,7 +114,7 @@ class Decoder(torch.nn.Module):
         self.self_attention = MaskedAttention(embed_dim)
         self.cross_attention = MaskedAttention(embed_dim)
         self.ff = FeedForward(embed_dim, ff_dim)
-        self.dropout = torch.nn.Dropout(p=0.1)
+        self.W_out4 = LayerNorm(embed_dim)
 
     def forward(self, src_encs, tgt_embs):
         seq_len, device = tgt_embs.size(1), tgt_embs.device
@@ -124,15 +125,15 @@ class Decoder(torch.nn.Module):
         # ! TIP Cross-attention operates on tgt_encs (for query) AND src_encs (for key and value). Only tgt_encs gets LayerNorm-ed in this case. No mask for cross-attention.
         tgt_embs_norm = self.W_norm1(tgt_embs)
         self_attn_output = self.self_attention(tgt_embs_norm, tgt_embs_norm, tgt_embs_norm, mask=causal_mask)
-        attn = tgt_embs + self.dropout(self_attn_output)
+        attn = tgt_embs + self_attn_output
 
         attn_norm = self.W_norm2(attn)
         cross_attn_output = self.cross_attention(attn_norm, src_encs, src_encs)
-        cross_attn = attn + self.dropout(cross_attn_output)
+        cross_attn = attn + cross_attn_output
 
         cross_attn_norm = self.W_norm3(cross_attn)
         ff_output = self.ff(cross_attn_norm)
-        ff = cross_attn + self.dropout(ff_output)
+        ff = cross_attn + ff_output
         
         return ff
 

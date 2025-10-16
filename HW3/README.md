@@ -21,7 +21,7 @@ Sentence 10: <BOS> A man in a vest is sitting in a chair and holding magazines .
 * Free response: 
 
 ## Part 3
-* BLEU: 
-* ChrF: 
-* TER:
+* BLEU: 24.47
+* ChrF: 45.50
+* TER: 63.12
 * Free response: 
