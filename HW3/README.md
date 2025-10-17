@@ -18,10 +18,19 @@ Sentence 9: <BOS> A guy works on a building . <EOS>
 Sentence 10: <BOS> A man in a vest is sitting in a chair and holding magazines . <EOS>
 ```
 
-* Free response: 
+* Free response:
+
+**What patterns do you notice in the tokenized English text? Are there cases where the segmentation looks weird or awkward to you – why or why not? Does it seem to align with words/morphemes?**
 
 ## Part 3
 * BLEU: 24.47
 * ChrF: 45.50
 * TER: 63.12
-* Free response: 
+* Free response:
+
+**Look at the translations output by your model (particularly for the first 20 sentences of the test set). Evaluate them qualitatively. What works well, and what doesn’t?**
+
+
+
+**Think about what each metric measures. Which one do you think best measures good quality for this dataset, and why?**
+
