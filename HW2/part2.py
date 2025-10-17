@@ -47,5 +47,5 @@ with open("rules.txt", "w") as f:
         for rhs, prob in rhs_probs.items():
             cnt = counts[lhs][rhs]
             rhs_str = " ".join(rhs)
-            line = f"{lhs} -> {rhs_str} # prob={prob:.4f}\n"
+            line = f"{lhs} -> {rhs_str} # prob={prob:.4f} counts={cnt}\n"
             f.write(line)
