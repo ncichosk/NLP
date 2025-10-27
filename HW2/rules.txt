@@ -1,0 +1,419 @@
+VB -> VB_t # prob=1.0000 counts=166
+DT -> DT_t # prob=1.0000 counts=198
+NNS -> NNS_t # prob=1.0000 counts=209
+NP -> DT NNS # prob=0.0855 counts=59
+NP -> NP NP* # prob=0.1159 counts=80
+NP -> DT NN # prob=0.1014 counts=70
+NP -> NP PP # prob=0.0406 counts=28
+NP -> CD NNS # prob=0.0029 counts=2
+NP -> NNP NNP # prob=0.1928 counts=133
+NP -> NP_NNP NP # prob=0.0130 counts=9
+NP -> NP SBAR # prob=0.0188 counts=13
+NP -> NP_CD PP # prob=0.0014 counts=1
+NP -> DT JJ # prob=0.0072 counts=5
+NP -> NNP NP* # prob=0.0464 counts=32
+NP -> QP RB # prob=0.0043 counts=3
+NP -> JJ NNP # prob=0.0043 counts=3
+NP -> DT NP* # prob=0.0841 counts=58
+NP -> CD RB # prob=0.0304 counts=21
+NP -> PDT NP* # prob=0.0043 counts=3
+NP -> NP VP # prob=0.0058 counts=4
+NP -> CD NP* # prob=0.0232 counts=16
+NP -> DT NX # prob=0.0014 counts=1
+NP -> NN NN # prob=0.0130 counts=9
+NP -> NP_NNP NP_NNP # prob=0.0072 counts=5
+NP -> NN NP* # prob=0.0174 counts=12
+NP -> NNP JJ # prob=0.0029 counts=2
+NP -> NNP POS # prob=0.0029 counts=2
+NP -> NN NNS # prob=0.0101 counts=7
+NP -> NP_NN NP* # prob=0.0072 counts=5
+NP -> NP_NN PP # prob=0.0014 counts=1
+NP -> JJ NN # prob=0.0159 counts=11
+NP -> CD CD # prob=0.0029 counts=2
+NP -> NNP NN # prob=0.0174 counts=12
+NP -> CD NN # prob=0.0145 counts=10
+NP -> QP NN # prob=0.0029 counts=2
+NP -> JJ NNS # prob=0.0072 counts=5
+NP -> NP_NNP NP* # prob=0.0087 counts=6
+NP -> NP ADJP_JJ # prob=0.0014 counts=1
+NP -> NP_DT PP # prob=0.0029 counts=2
+NP -> NP_NNS NP* # prob=0.0188 counts=13
+NP -> JJ NP* # prob=0.0130 counts=9
+NP -> NP SBAR_S_VP # prob=0.0014 counts=1
+NP -> NP_NNS PP # prob=0.0043 counts=3
+NP -> QP NNS # prob=0.0101 counts=7
+NP -> NP NNS # prob=0.0014 counts=1
+NP -> NP_NNS VP # prob=0.0029 counts=2
+NP -> JJS NP* # prob=0.0058 counts=4
+NP -> WDT NNS # prob=0.0014 counts=1
+NP -> JJS NN # prob=0.0116 counts=8
+NP -> CC NP* # prob=0.0014 counts=1
+NP -> NP NP # prob=0.0029 counts=2
+NP -> NNP NNS # prob=0.0014 counts=1
+NP -> QP NP* # prob=0.0014 counts=1
+NP -> RB NP* # prob=0.0014 counts=1
+IN -> IN_t # prob=1.0000 counts=482
+NP_NNP -> NNP_t # prob=1.0000 counts=451
+PP -> IN NP_NNP # prob=0.3499 counts=239
+PP -> TO NP_NNP # prob=0.2328 counts=159
+PP -> IN NP # prob=0.2884 counts=197
+PP -> IN NP_PRP # prob=0.0015 counts=1
+PP -> TO NP # prob=0.0849 counts=58
+PP -> IN NP_DT # prob=0.0161 counts=11
+PP -> IN NP_NN # prob=0.0132 counts=9
+PP -> IN ADJP_JJ # prob=0.0015 counts=1
+PP -> IN PP* # prob=0.0015 counts=1
+PP -> PP PP* # prob=0.0015 counts=1
+PP -> NP PP* # prob=0.0015 counts=1
+PP -> IN NP_NNPS # prob=0.0015 counts=1
+PP -> IN NP_NNS # prob=0.0044 counts=3
+PP -> TO INTJ_UH # prob=0.0015 counts=1
+TO -> TO_t # prob=1.0000 counts=241
+WHNP_WDT -> WDT_t # prob=1.0000 counts=49
+VBP -> VBP_t # prob=1.0000 counts=114
+S_VP -> VBP PP # prob=0.0144 counts=2
+S_VP -> VB NP # prob=0.1223 counts=17
+S_VP -> TO VP # prob=0.1511 counts=21
+S_VP -> MD VP # prob=0.0144 counts=2
+S_VP -> VBZ VP* # prob=0.0144 counts=2
+S_VP -> VB VP* # prob=0.5540 counts=77
+S_VP -> VB NP_PRP # prob=0.0144 counts=2
+S_VP -> VBP NP # prob=0.0144 counts=2
+S_VP -> VBZ PP # prob=0.0216 counts=3
+S_VP -> VBP NP_NN # prob=0.0144 counts=2
+S_VP -> VBZ NP # prob=0.0072 counts=1
+S_VP -> VB NP_NNS # prob=0.0144 counts=2
+S_VP -> VBZ ADVP_RB # prob=0.0072 counts=1
+S_VP -> VBP ADVP # prob=0.0072 counts=1
+S_VP -> VP VP* # prob=0.0144 counts=2
+S_VP -> VBP VP* # prob=0.0072 counts=1
+S_VP -> VBZ NP_NN # prob=0.0072 counts=1
+SBAR -> WHNP_WDT S_VP # prob=0.9091 counts=20
+SBAR -> WHNP_WDT S # prob=0.0455 counts=1
+SBAR -> WHNP SQ # prob=0.0455 counts=1
+NP* -> PP SBAR # prob=0.0112 counts=5
+NP* -> PP NP* # prob=0.1211 counts=54
+NP* -> VP VP # prob=0.0022 counts=1
+NP* -> VP SBAR # prob=0.0045 counts=2
+NP* -> NNP NNP # prob=0.0605 counts=27
+NP* -> PP PP # prob=0.2422 counts=108
+NP* -> PP NP # prob=0.0135 counts=6
+NP* -> NN NN # prob=0.0561 counts=25
+NP* -> JJ NP* # prob=0.0291 counts=13
+NP* -> NNP NN # prob=0.0067 counts=3
+NP* -> DT NNS # prob=0.0067 counts=3
+NP* -> NN NP* # prob=0.0224 counts=10
+NP* -> CD RB # prob=0.0067 counts=3
+NP* -> CC NP* # prob=0.0090 counts=4
+NP* -> JJ NN # prob=0.0224 counts=10
+NP* -> PP NP_NN # prob=0.0067 counts=3
+NP* -> PP VP # prob=0.0224 counts=10
+NP* -> CD NN # prob=0.0067 counts=3
+NP* -> CD NP* # prob=0.0448 counts=20
+NP* -> NNP NP* # prob=0.0516 counts=23
+NP* -> CD CD # prob=0.0381 counts=17
+NP* -> NP_NN NP* # prob=0.0045 counts=2
+NP* -> JJS NN # prob=0.0157 counts=7
+NP* -> CC NP # prob=0.0336 counts=15
+NP* -> X_TO PP # prob=0.0022 counts=1
+NP* -> NP NP* # prob=0.0045 counts=2
+NP* -> NN NNS # prob=0.0516 counts=23
+NP* -> ADVP_RB NP # prob=0.0045 counts=2
+NP* -> JJS NP* # prob=0.0067 counts=3
+NP* -> SYM CD # prob=0.0022 counts=1
+NP* -> SBAR PP # prob=0.0022 counts=1
+NP* -> X_JJ NNS # prob=0.0022 counts=1
+NP* -> NNS PP # prob=0.0022 counts=1
+NP* -> CC NP_NNP # prob=0.0090 counts=4
+NP* -> VP ADVP # prob=0.0067 counts=3
+NP* -> CD NNS # prob=0.0067 counts=3
+NP* -> NNP NNS # prob=0.0112 counts=5
+NP* -> CC NNP # prob=0.0067 counts=3
+NP* -> NN SYM # prob=0.0045 counts=2
+NP* -> CC NP_NN # prob=0.0022 counts=1
+NP* -> ADJP NN # prob=0.0022 counts=1
+NP* -> RB RB # prob=0.0090 counts=4
+NP* -> PP NP_NNS # prob=0.0022 counts=1
+NP* -> NP ADVP_RB # prob=0.0022 counts=1
+NP* -> PP ADVP_RB # prob=0.0022 counts=1
+NP* -> PP ADJP # prob=0.0022 counts=1
+NP* -> NNS QP # prob=0.0022 counts=1
+NP* -> JJS NNS # prob=0.0022 counts=1
+NP* -> JJ NNS # prob=0.0022 counts=1
+NP* -> DT NP* # prob=0.0022 counts=1
+NP* -> SYM NP* # prob=0.0067 counts=3
+PUNC -> PUNC_t # prob=1.0000 counts=469
+TOP -> S_VP PUNC # prob=0.2090 counts=98
+TOP -> SQ PUNC # prob=0.0448 counts=21
+TOP -> S PUNC # prob=0.1151 counts=54
+TOP -> SBARQ PUNC # prob=0.2175 counts=102
+TOP -> FRAG PUNC # prob=0.0597 counts=28
+TOP -> FRAG_NP PUNC # prob=0.2239 counts=105
+TOP -> INTJ_UH PUNC # prob=0.0043 counts=2
+TOP -> FRAG_NP_NN PUNC # prob=0.0043 counts=2
+TOP -> X_SBARQ PUNC # prob=0.0021 counts=1
+TOP -> SBAR PUNC # prob=0.0021 counts=1
+TOP -> FRAG_VP PUNC # prob=0.0171 counts=8
+TOP -> NP PUNC # prob=0.0064 counts=3
+TOP -> FRAG_NP_NNP PUNC # prob=0.0021 counts=1
+TOP -> FRAG_WHNP PUNC # prob=0.0704 counts=33
+TOP -> FRAG_PP PUNC # prob=0.0107 counts=5
+TOP -> FRAG_ADJP_JJ PUNC # prob=0.0043 counts=2
+TOP -> ADJP_JJ PUNC # prob=0.0021 counts=1
+TOP -> FRAG_ADJP_JJS PUNC # prob=0.0021 counts=1
+TOP -> X_S_VP PUNC # prob=0.0021 counts=1
+VBZ -> VBZ_t # prob=1.0000 counts=58
+NN -> NN_t # prob=1.0000 counts=281
+NP_NN -> NN_t # prob=1.0000 counts=51
+VP -> VB NP_NN # prob=0.0446 counts=7
+VP -> VBG PP # prob=0.0955 counts=15
+VP -> VBG NP # prob=0.0382 counts=6
+VP -> VBP NP # prob=0.1083 counts=17
+VP -> VB S # prob=0.0127 counts=2
+VP -> VBP S_VP # prob=0.0510 counts=8
+VP -> VB VP* # prob=0.1274 counts=20
+VP -> VB S_VP # prob=0.0828 counts=13
+VP -> VBZ PP # prob=0.0127 counts=2
+VP -> MD VP # prob=0.1210 counts=19
+VP -> VB PP # prob=0.0446 counts=7
+VP -> VB NP # prob=0.0955 counts=15
+VP -> VP VP* # prob=0.0191 counts=3
+VP -> TO VP # prob=0.0064 counts=1
+VP -> VBG NP_NNP # prob=0.0064 counts=1
+VP -> VBP PP # prob=0.0318 counts=5
+VP -> VBN PP # prob=0.0191 counts=3
+VP -> VBP ADJP # prob=0.0064 counts=1
+VP -> VB NP_NNP # prob=0.0127 counts=2
+VP -> VBD NP # prob=0.0064 counts=1
+VP -> VBP FRAG # prob=0.0064 counts=1
+VP -> VBP VP* # prob=0.0127 counts=2
+VP -> VB NP_NNS # prob=0.0064 counts=1
+VP -> VBG VP* # prob=0.0255 counts=4
+VP -> VBZ NP # prob=0.0064 counts=1
+SQ* -> NP VP # prob=0.1324 counts=9
+SQ* -> NP VP_VB # prob=0.0588 counts=4
+SQ* -> NP_PRP VP # prob=0.0882 counts=6
+SQ* -> NP_NN VP # prob=0.0147 counts=1
+SQ* -> NP PP # prob=0.0147 counts=1
+SQ* -> NP_NP_EX NP # prob=0.0294 counts=2
+SQ* -> PP PP # prob=0.2500 counts=17
+SQ* -> NP SQ* # prob=0.0294 counts=2
+SQ* -> NP_NP_EX SQ* # prob=0.2500 counts=17
+SQ* -> NP ADJP_JJ # prob=0.0147 counts=1
+SQ* -> VBZ SQ* # prob=0.0147 counts=1
+SQ* -> NP NP # prob=0.0294 counts=2
+SQ* -> NP_DT NP # prob=0.0147 counts=1
+SQ* -> PP SQ* # prob=0.0294 counts=2
+SQ* -> NP_PRP VP_VB # prob=0.0147 counts=1
+SQ* -> MD SQ* # prob=0.0147 counts=1
+SQ -> VBZ SQ* # prob=0.1733 counts=13
+SQ -> MD SQ* # prob=0.0533 counts=4
+SQ -> VBP NP # prob=0.0667 counts=5
+SQ -> VBP SQ* # prob=0.3467 counts=26
+SQ -> VBZ NP_PRP # prob=0.0267 counts=2
+SQ -> VBZ NP # prob=0.2933 counts=22
+SQ -> X SQ* # prob=0.0133 counts=1
+SQ -> VBP NP_NP_EX # prob=0.0133 counts=1
+SQ -> INTJ_UH SQ* # prob=0.0133 counts=1
+NP_PRP -> PRP_t # prob=1.0000 counts=136
+VBG -> VBG_t # prob=1.0000 counts=34
+S -> NP_PRP VP # prob=0.5902 counts=36
+S -> NP_NN VP_VBN # prob=0.0164 counts=1
+S -> NP VP # prob=0.1311 counts=8
+S -> S S* # prob=0.0328 counts=2
+S -> INTJ_UH VP # prob=0.0656 counts=4
+S -> INTJ_UH S* # prob=0.0164 counts=1
+S -> NP_NNP VP_VBZ # prob=0.0164 counts=1
+S -> PP S* # prob=0.0328 counts=2
+S -> NP_PRP S* # prob=0.0164 counts=1
+S -> ADVP_RB S* # prob=0.0328 counts=2
+S -> ADVP_RB VP # prob=0.0328 counts=2
+S -> NP_NN VP # prob=0.0164 counts=1
+VP_VBN -> VBN_t # prob=1.0000 counts=1
+CD -> CD_t # prob=1.0000 counts=140
+MD -> MD_t # prob=1.0000 counts=26
+ADVP_RB -> RB_t # prob=1.0000 counts=16
+NNP -> NNP_t # prob=1.0000 counts=408
+ADVP -> ADVP_RB PP # prob=0.2857 counts=2
+ADVP -> RB PP # prob=0.1429 counts=1
+ADVP -> NP RB # prob=0.5714 counts=4
+VP* -> PP ADVP # prob=0.0065 counts=1
+VP* -> NP_PRP VP* # prob=0.0194 counts=3
+VP* -> NP_PRP ADVP # prob=0.0065 counts=1
+VP* -> PP NP_NN # prob=0.0065 counts=1
+VP* -> PP PP # prob=0.2194 counts=34
+VP* -> CC VP # prob=0.0452 counts=7
+VP* -> PRT_RP NP # prob=0.0065 counts=1
+VP* -> NP_PRP NP # prob=0.4968 counts=77
+VP* -> NP_PRP PP # prob=0.0065 counts=1
+VP* -> X_TO PP # prob=0.0065 counts=1
+VP* -> PP VP* # prob=0.0710 counts=11
+VP* -> ADVP NP # prob=0.0065 counts=1
+VP* -> PP ADJP # prob=0.0065 counts=1
+VP* -> ADVP_RB VP* # prob=0.0065 counts=1
+VP* -> PP NP # prob=0.0129 counts=2
+VP* -> NP INTJ_UH # prob=0.0129 counts=2
+VP* -> NP_NNP PP # prob=0.0323 counts=5
+VP* -> NP_NNP VP* # prob=0.0129 counts=2
+VP* -> NP PP # prob=0.0129 counts=2
+VP* -> RB VP # prob=0.0065 counts=1
+NP_CD -> CD_t # prob=1.0000 counts=1
+CC -> CC_t # prob=1.0000 counts=41
+JJ -> JJ_t # prob=1.0000 counts=66
+S* -> CC S # prob=0.2500 counts=2
+S* -> NP_PRP VP # prob=0.6250 counts=5
+S* -> ADVP_RB VP # prob=0.1250 counts=1
+RB -> RB_t # prob=1.0000 counts=53
+QP -> RB CD # prob=0.2143 counts=3
+QP -> IN QP* # prob=0.1429 counts=2
+QP -> RBR QP* # prob=0.2857 counts=4
+QP -> CD QP* # prob=0.2143 counts=3
+QP -> CC JJR # prob=0.0714 counts=1
+QP -> RB QP* # prob=0.0714 counts=1
+WRB -> WRB_t # prob=1.0000 counts=9
+WHNP -> WRB RB # prob=0.0549 counts=5
+WHNP -> WHNP ADJP_JJ # prob=0.0110 counts=1
+WHNP -> WHNP_WDT PP # prob=0.1868 counts=17
+WHNP -> WDT NN # prob=0.0330 counts=3
+WHNP -> WDT NNS # prob=0.6703 counts=61
+WHNP -> WHNP PP # prob=0.0330 counts=3
+WHNP -> WHADJP NNS # prob=0.0110 counts=1
+ADJP_JJ -> JJ_t # prob=1.0000 counts=9
+VP_VB -> VB_t # prob=1.0000 counts=6
+SBARQ -> WHNP SQ # prob=0.0784 counts=8
+SBARQ -> PP SBARQ* # prob=0.0098 counts=1
+SBARQ -> WHNP_WP SQ # prob=0.1961 counts=20
+SBARQ -> WHNP SQ_VP # prob=0.4118 counts=42
+SBARQ -> WHNP_WHNP SQ # prob=0.1863 counts=19
+SBARQ -> WHNP_WDT SQ # prob=0.0490 counts=5
+SBARQ -> WHADVP_WRB SQ # prob=0.0098 counts=1
+SBARQ -> WHNP_WDT SQ_VP # prob=0.0588 counts=6
+PRT_RP -> RP_t # prob=1.0000 counts=1
+PDT -> PDT_t # prob=1.0000 counts=3
+WDT -> WDT_t # prob=1.0000 counts=83
+WHNP_WHNP -> WDT NNS # prob=0.9000 counts=18
+WHNP_WHNP -> WHADJP NNS # prob=0.1000 counts=2
+SQ_VP -> VBP PP # prob=0.1400 counts=7
+SQ_VP -> VP VP* # prob=0.0400 counts=2
+SQ_VP -> VBP VP # prob=0.0200 counts=1
+SQ_VP -> VBP NP # prob=0.0800 counts=4
+SQ_VP -> VBZ NP_NN # prob=0.0200 counts=1
+SQ_VP -> VBP NP_NN # prob=0.0800 counts=4
+SQ_VP -> VBP ADVP_RB # prob=0.0200 counts=1
+SQ_VP -> VBZ ADJP_JJ # prob=0.0600 counts=3
+SQ_VP -> VBP ADVP_RBS # prob=0.0200 counts=1
+SQ_VP -> VBZ ADVP_RBS # prob=0.0200 counts=1
+SQ_VP -> VBP VP* # prob=0.3600 counts=18
+SQ_VP -> VBP PP_IN # prob=0.0200 counts=1
+SQ_VP -> VBP ADJP_JJ # prob=0.0200 counts=1
+SQ_VP -> VBP NP_NNS # prob=0.0200 counts=1
+SQ_VP -> VBZ NP # prob=0.0200 counts=1
+SQ_VP -> VBP NP_NNP # prob=0.0200 counts=1
+SQ_VP -> VBZ ADJP_JJR # prob=0.0400 counts=2
+SBARQ* -> WHNP_WHNP SQ_VP # prob=1.0000 counts=1
+WHNP_WP -> WP_t # prob=1.0000 counts=20
+NP_DT -> DT_t # prob=1.0000 counts=15
+WP -> WP_t # prob=1.0000 counts=4
+X -> WP IN # prob=0.6667 counts=4
+X -> WRB IN # prob=0.1667 counts=1
+X -> VBZ NP_DT # prob=0.1667 counts=1
+FRAG -> X PP # prob=0.0690 counts=2
+FRAG -> NP INTJ_UH # prob=0.0345 counts=1
+FRAG -> X NP # prob=0.0690 counts=2
+FRAG -> NP FRAG* # prob=0.0690 counts=2
+FRAG -> NP_NNP FRAG* # prob=0.1034 counts=3
+FRAG -> PP VP # prob=0.0345 counts=1
+FRAG -> ADVP_RB NP_NNP # prob=0.0345 counts=1
+FRAG -> NP_NNP PP # prob=0.1724 counts=5
+FRAG -> PP PP # prob=0.1379 counts=4
+FRAG -> PP FRAG* # prob=0.0345 counts=1
+FRAG -> WHNP PP # prob=0.0345 counts=1
+FRAG -> WHNP FRAG* # prob=0.0690 counts=2
+FRAG -> NP_NN FRAG* # prob=0.0345 counts=1
+FRAG -> X NP_NNP # prob=0.0345 counts=1
+FRAG -> NP NP # prob=0.0690 counts=2
+VBN -> VBN_t # prob=1.0000 counts=3
+ADJP -> JJ PP # prob=0.2000 counts=1
+ADJP -> RB ADJP* # prob=0.2000 counts=1
+ADJP -> RBS JJ # prob=0.2000 counts=1
+ADJP -> JJR PP # prob=0.4000 counts=2
+NX_NN -> NN_t # prob=1.0000 counts=1
+NX -> NN NN # prob=0.5000 counts=1
+NX -> NX_NN NX* # prob=0.5000 counts=1
+NX* -> CC NX # prob=1.0000 counts=1
+X_TO -> TO_t # prob=1.0000 counts=2
+WHADVP_WRB -> WRB_t # prob=1.0000 counts=1
+INTJ_UH -> UH_t # prob=1.0000 counts=12
+FRAG_NP -> NP PP # prob=0.0571 counts=6
+FRAG_NP -> NP NP* # prob=0.2190 counts=23
+FRAG_NP -> NP_NNS NP* # prob=0.3333 counts=35
+FRAG_NP -> JJS NN # prob=0.0381 counts=4
+FRAG_NP -> NP VP_VBG # prob=0.0095 counts=1
+FRAG_NP -> NNP NN # prob=0.0190 counts=2
+FRAG_NP -> NP_NNS PP # prob=0.0667 counts=7
+FRAG_NP -> NN NNS # prob=0.0095 counts=1
+FRAG_NP -> NP_NN PP # prob=0.0571 counts=6
+FRAG_NP -> NP_NN NP* # prob=0.0381 counts=4
+FRAG_NP -> JJ NP* # prob=0.0095 counts=1
+FRAG_NP -> DT NNS # prob=0.0095 counts=1
+FRAG_NP -> NN NP* # prob=0.0381 counts=4
+FRAG_NP -> CD NNS # prob=0.0095 counts=1
+FRAG_NP -> JJ NNS # prob=0.0095 counts=1
+FRAG_NP -> NP_NNP NP* # prob=0.0095 counts=1
+FRAG_NP -> JJS NP* # prob=0.0190 counts=2
+FRAG_NP -> NN NN # prob=0.0286 counts=3
+FRAG_NP -> NP_NNS ADJP # prob=0.0095 counts=1
+FRAG_NP -> JJS NNS # prob=0.0095 counts=1
+JJS -> JJS_t # prob=1.0000 counts=32
+NP_NP_EX -> EX_t # prob=1.0000 counts=20
+POS -> POS_t # prob=1.0000 counts=2
+VP_VBZ -> VBZ_t # prob=1.0000 counts=1
+VBD -> VBD_t # prob=1.0000 counts=1
+ADJP* -> RB PP # prob=1.0000 counts=1
+FRAG* -> NP NP # prob=0.0833 counts=1
+FRAG* -> NP FRAG* # prob=0.1667 counts=2
+FRAG* -> PP PP # prob=0.4167 counts=5
+FRAG* -> PP VP # prob=0.0833 counts=1
+FRAG* -> PP NP # prob=0.0833 counts=1
+FRAG* -> PP FRAG* # prob=0.0833 counts=1
+FRAG* -> PP ADVP_RB # prob=0.0833 counts=1
+FRAG_NP_NN -> NN_t # prob=1.0000 counts=2
+ADVP_RBS -> RBS_t # prob=1.0000 counts=2
+WHADJP -> WRB JJ # prob=1.0000 counts=3
+PP_IN -> IN_t # prob=1.0000 counts=1
+X_SBARQ -> WHNP SQ_VP # prob=1.0000 counts=1
+SYM -> SYM_t # prob=1.0000 counts=6
+QP* -> JJS CD # prob=0.1429 counts=2
+QP* -> IN CD # prob=0.2857 counts=4
+QP* -> CD CD # prob=0.2857 counts=4
+QP* -> CD QP* # prob=0.1429 counts=2
+QP* -> IN QP* # prob=0.0714 counts=1
+QP* -> JJR QP* # prob=0.0714 counts=1
+X_JJ -> JJ_t # prob=1.0000 counts=1
+NP_NNS -> NNS_t # prob=1.0000 counts=69
+FRAG_VP -> VBG VP* # prob=0.7500 counts=6
+FRAG_VP -> VBG PP # prob=0.1250 counts=1
+FRAG_VP -> VBG NP # prob=0.1250 counts=1
+VP_VBG -> VBG_t # prob=1.0000 counts=1
+PP* -> IN NP # prob=0.2500 counts=1
+PP* -> CC PP* # prob=0.2500 counts=1
+PP* -> CC PP # prob=0.2500 counts=1
+PP* -> IN S_VP_VBG # prob=0.2500 counts=1
+SBAR_S_VP -> TO VP_VB # prob=1.0000 counts=1
+RBR -> RBR_t # prob=1.0000 counts=4
+FRAG_NP_NNP -> NNP_t # prob=1.0000 counts=1
+WHNP* -> PP PP # prob=0.5614 counts=32
+WHNP* -> PP WHNP* # prob=0.4386 counts=25
+FRAG_WHNP -> WHNP WHNP* # prob=0.9394 counts=31
+FRAG_WHNP -> NP WHNP* # prob=0.0303 counts=1
+FRAG_WHNP -> WHNP PP # prob=0.0303 counts=1
+FRAG_PP -> IN NP_NNP # prob=0.2000 counts=1
+FRAG_PP -> IN NP # prob=0.8000 counts=4
+S_VP_VBG -> VBG_t # prob=1.0000 counts=1
+ADJP_JJR -> JJR_t # prob=1.0000 counts=2
+FRAG_ADJP_JJ -> JJ_t # prob=1.0000 counts=2
+RBS -> RBS_t # prob=1.0000 counts=1
+NP_NNPS -> NNPS_t # prob=1.0000 counts=1
+FRAG_ADJP_JJS -> JJS_t # prob=1.0000 counts=1
+JJR -> JJR_t # prob=1.0000 counts=4
+X_S_VP -> VB VP* # prob=1.0000 counts=1
