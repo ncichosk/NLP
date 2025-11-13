@@ -1,0 +1,443 @@
+Top-K Decoding Outputs:
+
+Context 1:
+Rick grew up in a troubled household. He went to the local school and attended the Eastern Washington Jesuit School where John E. Bauers taught English. When he began attending the university, he was a regular on the campus radio station and
+
+Context 2:
+Laverne needs to prepare something for her friend's party. "You have someone who can put someone in the right place and it's good for them," she says.
+
+The first thing she will do is take out her kids and start the party first
+
+Context 3:
+Sarah had been dreaming of visiting Europe for years. "The first time she visited the world was in 1989," a family friend said, when she arrived. "She was so passionate about trying to get back in Europe that she brought me a copy with
+
+Context 4:
+Gina was worried the cookie dough in the tube would be gross. So she started baking the peanut butter. "We did that on top of the bread, and it tasted great, too." She says that she baked it in 1 1/2 pounds or 7 1
+
+Context 5:
+It was  my final performance in marching band.  I am not going to describe it as "good music."  It was  something more like "music of some sort."  I'm not a drummer, I'm not
+
+Context 6:
+Jim found an old disposable camera in the bottom of his junk drawer. "What's the matter, Mr. Peek?" he said. "A man. The police don't like it, after all."
+
+
+"What?" I asked again and again.
+
+
+
+Context 7:
+Ron started his new job as a landscaper today.
+
+"I work for a couple years and now I'm on my last job. The good news is, it's not a big deal. And you know if they asked, 'Why don
+
+Context 8:
+John and Billy became very skilled at beer pong. I think in the last 15 years I've spent a lot of time at the Brewster's Beer Farm & Wine Farm which is a really good thing because they have had a lot of beer pong
+
+Context 9:
+Caroline was a student in medical school. She and her dad, Johnnie, used to get together at McDonald's with their five kids. While they were on vacation, Johnnie was taking a nap in the living room when two men,
+
+Context 10:
+Trish hated the outdoors. "Well you got in a lot of trouble," her father added.
+
+But she always said: "You could say I was the one who really did it."
+
+The mother and her
+
+Context 11:
+Tony was happy to be going on his first cruise. He was the person who had the nerve to ask me if the ship did really well and then make sure that if they could make any progress when they could get us on board, then yes.
+
+
+
+Context 12:
+Ignacio wants to play a sport while he is in college. He will find some comfort in playing in the NFL. He is also an excellent quarterback for a small school. But what he can't control is his self.
+
+And, with two games coming
+
+Context 13:
+Danny bought a boat. He wasn't planning on buying a boat.
+
+"We're living up here right now," he said after the boat was washed ashore, in a boat that he brought along.
+
+He
+
+Context 14:
+At school, Mary received an assignment to write an essay about pandas. She had planned to study with them because they were not in the best interests of his children, who were ill due to the pandas they loved.
+
+As a sophomore, she found herself at
+
+Context 15:
+Ellen dreamed of winning a prize for her roses. When that dream come true, she found herself in love with the man she loved. But she was only 16, so her heart got very cold, and she couldn't really see his face until the
+
+Context 16:
+Jesse had just started fifth grade. She was already so engrossed in studying her homework that she didn't even stop reading to her. The school's principal called her after one lecture and asked if she wanted anything. "I already
+
+Context 17:
+Tiffany was getting overwhelmed at work. She was exhausted in bed. It was almost like she was dying. 'No I'm fine,' she said. 'I'm fine,' I said.
+
+That's not the only thing I
+
+Context 18:
+Gina misplaced her phone at her grandparents. She turned off her computer while she talked on the phone to the woman who had taken the calls and then called her mom, and she took it to an office in Chicago, the man later told K
+
+Context 19:
+Alice was getting married in a few weeks. She said that she needed the help of a therapist who had come up with a lot of new ways to treat anxiety. She had already had over 70 years of therapy which didn't involve drugs. She
+
+Context 20:
+Ted loves to go to the movies. He loves to go to the theater every once in a while," he said.
+
+He said she said he had gotten in trouble with the cops.
+
+One of the victims said the officer
+
+Context 21:
+Nya had been asked on a paintball trip with friends. Then she said, "I have to tell you, you're taking the piss." I said, "Well, who are you making that stuff out of?" [laughs] No one was actually hurt
+
+Context 22:
+All of Javier's friends at school have smartphones. You can buy them by hand at the same place you pick him up.
+
+The kids also learn how to take turns talking to the same person — it's a simple touch. Javier, who
+
+Context 23:
+Rachel decided to donate blood at the local blood drive. The local blood drive held the promise of getting "the right to life of anyone" if she chose to donate blood in South Carolina.
+
+Since becoming a volunteer, the Blood Drive is helping people
+
+Context 24:
+Ron was watching a high-speed chase on TV. 'So?'
+
+'I'm watching the show,' he said. 'A lot of the crazy stuff is coming into play onscreen. I don't know what the outcome will be.'
+
+
+Context 25:
+Sam loved his old belt. He liked the idea of an outfit that came with jeans, and the jeans were an option at the time that he loved at the time, but he didn't think his old belt would last as long
+
+Context 26:
+Larry bought a new motorcycle.
+
+He went on to build his own company and he owned a few motorcycles. The company was shuttered in 2000 and his business died in 2009.
+
+"He was doing something really extraordinary
+
+Context 27:
+I went on a blind date a few days ago. I just wanted to say, 'Why isn't my husband doing more of the work'? He said it is, but he needs to make a donation, or he needs to go into the gym.
+
+Context 28:
+Sammy's coffee grinder was broken. He picked up a glass and started rolling into it.
+
+"Oh my god…you couldn't feel a thing!" he yelled. He took out a handful of cans and began throwing all of
+
+Context 29:
+Last week Jared was driving to work.
+
+On the way home from his job in the kitchen, he spotted a note: 'What are you doing down there?' Then this: 'What happened to my dog?.'
+
+He
+
+Context 30:
+Joe grew a big batch of peas in his garden. I took a trip to the yard and they grew a batch of peas and used them the next day." "You can use them in cornmeal, or your grain-stuffing grain — peas are
+
+Context 31:
+Aliza had a long lost ex-boyfriend she was bound to find.
+
+"I love you," she says, sitting down in bed as soon as he started playing with her.
+
+"If you ever want kids," he said again, leaning up against her
+
+Context 32:
+Lina went to see how candy canes were made. She came back with the recipe (it was pretty easy – just a little more salt, just slightly more sugar) and they were gorgeous! The first time I went, I took her into my bedroom
+
+Context 33:
+When I first moved into my house, I didn't know my neighbors. After living in the apartment for 15 years, what came in the mail I couldn't even remember and I began to look for answers – even if I knew exactly how they came. In my time living
+
+Context 34:
+Bev had been studying very hard. He is an exceptional scientist and an outstanding communicator. He understands the natural world by studying the laws of thermodynamics. For example, he is capable of performing calculations for the physics of light. He
+
+Context 35:
+We went to Frank Pepe's pizza shop three weeks ago. It's a cute place. And it looked like it was really cool. My dad told me it could be so much better for our kids."
+
+"And I don't know what to say
+
+Context 36:
+Bernice always wanted to travel to Africa. But all the places she travelled to were like nothing she'd ever seen."
+
+She said, "When I had that conversation with Richard, I was like, 'You know what, I could
+
+Context 37:
+Jim made spinach cookies. We had some delicious, and very tasty, sandwiches from the "Babysitters Garden."
+
+The sandwiches (and I am a believer) are pretty much the main dish in your bowl.
+
+Context 38:
+Randy's friend gave him directions to his house. It was the house of Jordon, who had been the target of an attack, and of course, Jayne who was in charge of Jayne, as well. He was a little worried for
+
+Context 39:
+I decided to go on a bike ride with my brother. You would think he would come back for the ride. So I don't even think he took much away from it because he was always talking his mind before he left. I didn't think a good
+
+Context 40:
+Anna went to the salon. They had met, she said, before she met the woman who had married his partner for the second time. She said she knew nothing about their relationship, but was glad to see his name on her
+
+Context 41:
+David and Sarah were friends during childhood.
+
+"My mother was the one who knew him for years at that time," says Sarah, who went on to do her part from the hospital. "We're very close now. He's
+
+Context 42:
+AJ and his mom were at the grocery store.
+
+"I'm just really confused as to why everybody in my family does not have a car [so they are not driving] because [they] know how hard it can be," said the
+
+Context 43:
+Joe went to the junkyard to find treasures. The man in power, after seeing how many things were in existence, asked her how he could get away with it. Before she answered, he started a fire: so he said that he would take
+
+Context 44:
+Priya decided to try a new restaurant. She has been looking through several menus and restaurants and she's always been pleased with the selection of food she's found at the local market, not the one at Sajal and Saini and
+
+Context 45:
+Karen was assigned a roommate her first year of college. Her dorm was a full-time, full-time, full-timers of the program she'd been accepted into: a very small apartment in the middle of nowhere. She didn't want to
+
+Context 46:
+We took a family vacation to the beach last year. We found a nice beach in North Augusta, Georgia, where we could enjoy the sunset and the sunshine. However, after a three week break we had a few problems. I had a few issues with
+
+Context 47:
+Donald was kind of the class clown. There was a lot of stuff he said."
+
+When asked how often the Clintons will say Clinton's policies will harm African-American communities, Sanders responded, "In a way I didn't agree
+
+Context 48:
+Eddie and Angela hadn't been talking to each other for a long time. Now, they had been together for nearly two months and they'd been making out at least once, maybe five times.
+
+"Why, oh why, where would I go if this didn't
+
+Context 49:
+Rachel adopted a cat over ten Years ago. We moved to our new home in the middle of the night to save a few people who were sleeping on it. They've been there the night there were no other cats left - no other pets and
+
+Context 50:
+Jim is a new driver and has never been pulled over before. He is not as far away as Dwayne from where I am in the picture, but he was not stopped or arrested. I would appreciate to know where is and who drugged and abused the driver
+
+Context 51:
+I love avocados. They're easy to wash and make great snack food.
+
+This recipe makes 24 bites. Just remember to let the recipe simmer for 1 hour and then cook at medium to simmer until the sauce is
+
+Context 52:
+David was an author that had trouble finding inspiration for his work. Then-Reprise Director Jodie Foster, in addition to becoming one of the founding writers of the New Republic magazine, helped to shape his career.
+
+Chen and Kushner took their inspiration
+
+Context 53:
+Boris was addicted to video games.
+
+"We never had this kind of fear of killing or harming anyone," Boris tells HuffPost. "We always believed that these were just games that we would love to play while we were growing up
+
+Context 54:
+A police officer came down with the flu today. The family are planning to celebrate the birth of their son by visiting this location yesterday. A vigil will be held here this morning.
+
+This is the fourth time this summer a person died from measles
+
+Context 55:
+My friend nathan and his family went to the lake one summer. They were so thirsty. They said, "Hey, hey, we are going to have to stay out of the water." They were very good to them.
+
+What about your wife and those
+
+Context 56:
+Gary was a brave child. He would be proud. He's like a dad," says Kjelen. "It wasn't a day that I would forget something." The four boys then met and went to live with their
+
+Context 57:
+Timmy was caught with unpaid parking tickets.
+
+The lawsuit claims they were pulled over by officers at the McDonald's restaurant.
+
+He was taken by ambulance to Jackson Memorial Hospital with what police described as a "bleeding hand," a
+
+Context 58:
+When I was younger, I went to summer camp. I really got interested in the game," said Roshan, now the assistant coach at North Shore University in Vermont.
+
+"I really love the game of basketball."
+
+Roshan
+
+Context 59:
+Amber had a lot of things to do this Sunday. She and Amber were able to celebrate their wedding at the Gagosian Center in Manhattan, where they met their beloved wife, their new baby girl, and a host of new guests. We've gotten
+
+Context 60:
+Eve needed a new couch in her parlor. She had to move, and she couldn't find the right couch.
+
+Her husband couldn't see her until she reached the end of the hallway — or, as she used to say, "
+
+Context 61:
+Jason was terrified of spiders. He didn't want to see more of them. So he hid his face. One day, the first thing I saw was the spider. My dad was looking into it and it was almost frightening.
+
+Context 62:
+Linda began to have problems with a coworker at her job. At first, he didn't give her any information on when she was working. One day, he had asked to make sure that there were no problems. Then he took her home, where his girlfriend
+
+Context 63:
+Sara wanted her kids to have a great Christmas. She decided to go for it.
+
+
+"I told them, 'Why would you do this? You should be a real happy person.' I mean, if you weren't happy about it,
+
+Context 64:
+Megan has been struggling with a drug habit for years. She was caught up in a series of drug-related raids of her home in the middle of the night as a result of a tip. They caught her in a bag full of marijuana that she kept
+
+Context 65:
+Tyler has been unemployed for Years. So why is she working so hard for her salary and for a living? Can we just be like 'The Good Wife' where people in need aren't always paid the same anymore?' So she just
+
+Context 66:
+Bobby was having a birthday party.
+
+"It was a birthday party for John and he didn't see anything unusual or unusual outside of his bedroom and he really liked everyone there and he was looking forward to having some fun," said
+
+Context 67:
+It was the last day of our vacation.
+
+
+I knew the house had been destroyed but I knew that if this were my kid and she wasn't there, everything would be OK, my wife and I would be safe. We would talk
+
+Context 68:
+Mother asked the children to help fold laundry. Their parents would get an order from his family, which included sheets and towels and a dish towel and water.
+
+"I couldn't let anyone into the room. I felt really scared," recalled
+
+Context 69:
+Timmy loves watching cartoons.
+
+In the late 1970's, it was possible to get comics into the hands of anyone from an early age. But now that it's all over, the possibilities are endless. How many of
+
+Context 70:
+My daughter had her baby shower in our Boston home. My three daughters just walked by and were waiting. I took mommy home. She was fine, she didn't feel anything and said she was fine. She felt nothing in her body. That's
+
+Context 71:
+Pam's house was where the party was. We started getting into the house and talking to Mrs Pritchard. She said we don't want to come to 'Bhampala.' So we drove to where Mrs Pritchard was going
+
+Context 72:
+Ellen always hated school.
+
+But when she saw her mother on the block, she found it hard to believe that the girl was hiding out there just waiting to die and that nothing would ever help her.
+
+As
+
+Context 73:
+Jim got his first credit card in college. He got his first credit card in high school. His last credit card has been taken from him."
+
+The day he got it, he'd never seen or heard of the man in the picture
+
+Context 74:
+Tim was entering a baking contest. She was ready to cook—not to put everything together, but to keep them together.
+
+"Let me know if you have any questions!"
+
+A moment of silent silence passed without a
+
+Context 75:
+My two year old son refused to wear training pants. When he was 10 years old, his mother asked him "What do you do for a living?" My dad answered: "I work at a computer and the computer's not working. I'm just
+
+Context 76:
+Holly was glad to be safely inside her house as the storm raged. She'd seen her friends from school leave in droves without any notice.
+
+She walked over to her and gave a comforting hug. "Yeah, I know it's been a long time,
+
+Context 77:
+Jill saw an infomercial for unbreakable glass cups. "It has a very different feel!" she says laughing. "It actually feels different than the other glass cups."
+
+The glass cups, by contrast, aren't an imitation of real objects.
+
+Context 78:
+Addie was working at the mall at Hollister when a strange man came in. He came in, tried not to do an accident, and told him to "shut up." I had no idea that he was a big name or that he had a problem when he saw this man
+
+Context 79:
+Sean was going for a job interview.
+
+We know from his testimony: He had an opportunity to make the most of being offered that kind of job. And he is happy to be getting a chance to meet people. But he is
+
+Context 80:
+Fred made a bet with Sam over who could lose more weight in a month. Unfortunately for him we all know his name, though the odds are still stacked against him.
+
+While that's the best outcome for Ben, there may be an even better outcome for Chad. As
+
+Context 81:
+John went skydiving for the first time. The day she did not fly home from school was July 16, 1992, to Canada for the first time. As she sat with her father on her flight back to school, she said, "It
+
+Context 82:
+Gina and her family were leaving the park.
+
+The four-star, 25-year-old from the Bayou Baptist Church in Bayou, Louisiana had not been to Louisiana for more than three months. She traveled from her family's
+
+Context 83:
+Kaya needed to buy a new dress for the upcoming Spring Formal.
+
+But that change in dress code wasn't quite enough.
+
+It seemed that even when she could dress herself for the Spring Formal, she'd still need to have the correct footwear.
+
+Context 84:
+Tyler wanted to have a balloon party with tons of balloons. But we had no idea how much it would cost. So we decided to have a party on the side of the road.
+
+So then my friend from Australia came along with us after a night
+
+Context 85:
+Jimmy went skateboarding this afternoon. This is going to be his first time back.
+
+Here's the video from it. The goal is to get this place back up and moving forward with a little planning and being able to move
+
+Context 86:
+Maxine usually hates to shave her legs. (I really wish we did this.)
+
+If this is all you're doing, I'd recommend getting a professional haircut for this job, whether you're an extra-virgin (my ex
+
+Context 87:
+Ryan loved to customize his bike. He spent several years with the San Francisco Police Department.
+
+In 2009, his father was fired. He had an open case of sexual assault after he and a female officer had sex with someone at
+
+Context 88:
+One day I wanted to cook a nice dinner for my family. After a few minutes, a boy came running towards the kitchen and said hello to our friend and we had a great time! He was wearing white socks with black beanies and black leggings.
+
+Context 89:
+Nick was challenged to a volleyball match. He tried repeatedly to throw punches, but his partner stopped him with an ankle sprained ankle and he was then hospitalized. The doctor who treated him later admitted that he had used drugs on himself and tried
+
+Context 90:
+Some friends and I made a Counter-Strike team. A friend and a teammate were playing Counter-Strike. We played it all our life, from childhood down to our current position. Even though we played it on our first ever Team Dignitas team,
+
+Context 91:
+Michelle found a fat tuxedo cat outside her house. "It's cute!" she said. The cat told the woman he and her partner had heard about the cat's existence. "He's not sleeping. He's doing really fine," she explained.
+
+Context 92:
+Neil was visiting Ireland. It all started with a visit to Glasgow, he told The Times.
+
+"The reason I wanted to speak had nothing to do with the UK or my parents. I came to Ireland because I
+
+Context 93:
+Mary went to the park. I went there about 10 years ago, it was just the beginning.
+
+MARTIN: Right right.
+
+MARTIN: She was an amazing woman, a truly amazing mother,
+
+Context 94:
+Scott knew someone was stealing packages from his porch. A second person was caught stealing a package from a neighbor's home.
+
+"The first person was apprehended by law enforcement and was booked into jail," said Police Lt. John Kocian,
+
+Context 95:
+Colin was invited to the bar by his friends. He started talking to their barista, a man wearing a hoodie who had been standing in the hallway behind him for several minutes. The barista was wearing his trademark high-heeled hat and
+
+Context 96:
+Jordan was planning on moving to Mexico. He didn't want to leave there. I wanted him there. But a few days ago I took out all of his work. I went in and he did this. He is a very good friend
+
+Context 97:
+Fred is brand new to exercising and just joined a gym. He is pretty sure he's still at his training gym, you know what I mean? He is really just a newbie and what he does is get in shape. He loves sports and the gym
+
+Context 98:
+It was the second match of the volleyball season. The fourth time, the Americans got down on their asses and were determined to force a match. For the first time in a long time, this was going to be a game with a bunch of women
+
+Context 99:
+Ellen had had four miscarriages in a row.
+
+"We knew he had a problem but we went to the police saying it was a case of mistaken identity."
+
+Mr Kelly insisted that the decision would be made by the coroner.
+
+
+Context 100:
+David asked his mother if he could pour his own drink. "Do you remember?" she repeated. "I would like to have some milk for our family." My mother agreed, handing me a glass that I could use to drink it after I'd started to
+
