@@ -54,7 +54,7 @@ Trish hated the outdoors. She was a little bit of a outdoorsy person, but she wa
 
 2. Free response about greedy search:
 
-Hold for answer.
+The greedy search does a really good job of writing plauable, on topic continuations of the prompts for the first sentence. This is because greedy search always picks the highest probably next word making the responses super plausable. The drawback of this method is a lack of creativity as the model is very deterministic. An even larger problem for the greedy search that is not present in even very limited top-k and top-p models, is the output getting stuck in a loop. All of the greedy search options either get stuck in a loop of the same phrase or look like they are beginning to get stuck in a loop. This happens when the most probably words in a given string keep leading to the others to be suggested. Since there is no variability in greedy search where the most probable wrod will not be picked, this will continue forever. Overall, this model is good at finding a very plausable continuation, but needs more variation to not get stuck in a loop.
 
 3. Ancestral sampling outputs:
 ```
@@ -115,7 +115,7 @@ Trish hated the outdoors. They'd played tables at wedding parties for both Barac
 
 4. Free response about ancestral sampling: 
 
-Hold for answer.
+Ancesteral sampling is a good alternative to greedy search. It solves the looping problem by 'drawing' a next word based on the likelihood of that word being next instead of always picking the most probable one. We can see this as none of the prompt continuations have any loops. What this program struggles with is being too random. This is apparent as in this output very low probability words such as Grifled and Gedaufar Glennist are produced by the model. These words are very clearly at the bottom of the probability distribution and highlight ancesterals sampling of allowing *all* potential words to be considered. Because ancesteral sampling doesn't just pick the most probable word like greedy search does, it has a lot more creative responses. It's drawback though is that its responses are too random and become incoherent. This leads us into the top-k and top-p methods which create a middle ground between these two.
 
 ## Part 2
 
@@ -167,7 +167,7 @@ The mother and her
 
 7. Free response about top-k decoding:
 
-Hold for answer.
+Top-k provides a good middle ground between greedy search and ancesteral sampling as doesn't just pick the most probable option, but also limits the tail of the probability distribution. We see this in the results as the responses are much more creative than the greedy search and do not get stuck in loops. At the same time, it is not as random as ancesteral sampling. The responses tend to be much more coherent than the ancesteral search output and do not output any crazy (but fun!) names like Gedaufar Glennist. Still, a lot of these responses drift off topic very quickly. I think this is due to the k value of 40 which seems high to me and probably leaves in a lot of low probability words in the distribution. This can be particularly problematic when there is a super high likelihood of one or two words following a string and top-k leaves 38 others in the distribution that don't really make sense. One example of this is in context 4 when the response says "she started baking the peanut butter." There are probably a handful very likely things the subject could be baking and peanut butter was probably very unlikely, but because there are so many words left in peanut butter got selected from a very low likelihood in the tail. This particular issue can be mitigated by top-p, but we will see if that has other issues in the next prompt...
 
 8. Top-p decoding outputs:
 ```
@@ -215,7 +215,7 @@ Trish hated the outdoors. It was a touch unfair to most women, but that wasn't w
 
 9. Free response about top-p decoding:
 
-Hold for answer.
+Top-p is very similar to top-k in the idea that we don't want to always pick the most probable next word, but also want to limit the words far in the tail of the distribution from being selected. Instead of limiting by a certain number of candidate words, top-p limits but the top x amount of words that have a cumulative probability of y. Like top-k, this strikes a middle ground between greedy search and acesteral search. Unlike top-k, when there are one or two candidate words make up almost all of the probability (i.e. the distribution has heavy skew), top-p is able to cut out improbable words that top-k would keep in avoiding the issue discussed in the last free response. This works well for very specific prompts, but when we input more open ended, story like prompts as we did in this assignment, the responses get very random. While both top-k and top-p are pretty random in what they spit out, top-p gets off topic much quicker and tends to stay on very specific topics once its in it. A good example of this is the beer pong prompt where Billy and Johnny immediately become soldiers and go to Afghanistan. This highlights top-p's issues which is when probability distributions are very flat, there might be hundereds of words included in the probability distribution. Context 8 provides a really good example of this because after the prompt, there are probably tons of different things that the prompt could say, and while soldier probably was not in the top 40 words, it was in the top 90% of likelihood. Then, once the model gets into a very specific topic, such as soldiers and war, it sticks to it for the rest of the response as their are probably only a limited amount of highly probable words in the training that follow soldiers, Afghanistan, and task force. 
 
 ## Part 3
 
