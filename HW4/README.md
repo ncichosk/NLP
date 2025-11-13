@@ -220,16 +220,19 @@ Top-p is very similar to top-k in the idea that we don't want to always pick the
 ## Part 3
 
 12. Values chosen for temperature and k:
+
     Tempurature: 0.75, 1, 1.25
+
     k values: 5, 30, 60
-13. Features chosen for qualitative measurement:
+    
+14. Features chosen for qualitative measurement:
 These five features will be what the output is evaluated on and rate 1-5. The best cumulative score will be selected.
     1. Comprehention - Is the output a plausable sentence? Can I comprehend an idea from it?
     2. Grammar - Does the grammar and sentence structure make sense
     3. Creativity - How creative is the sentence?
     4. Theme - Does the output have a coherent idea or theme throughout the response?
     5. Naturalness - Does it sound like a real person wrote this?
-14. Results:
+15. Results:
 
 |          | k = 5 | k = 30 | k = 60 |
 |----------|-------|--------|--------|
