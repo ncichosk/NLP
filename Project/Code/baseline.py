@@ -88,8 +88,8 @@ with open('../Data/basic_processed.csv', newline='') as csvfile:
         if firstline:
             firstline = 0
             continue
-        text.append(line[3])
-        scrambles.append(line[2])
+        text.append(line[0])
+        scrambles.append(line[1])
         line_count += 1
 
 total_correct = 0

@@ -3,11 +3,13 @@
 import csv
 from enigma.machine import EnigmaMachine
 
-text = []
+text = ["fromfairestcreatureswedesireincreasethattherebybeautysrosemightneverdiebutastheripershouldbytimedeceasehistenderheirmightbearhismemorybutthoucontractedtothineownbrighteyesfeedstthylightsflamewithselfsubstantialfuelmakingafaminewhereabundanceliesthyselfthyfoetothysweetselftoocruelthouthatartnowtheworldsfreshornamentandonlyheraldtothegaudyspringwithinthineownbudburiestthycontentandtenderchurlmakstwasteinniggardingpitytheworldorelsethisgluttonbetoeattheworldsduebythegraveandthee"
+]
 scrambles = []
 firstline = 1
 line_count = 0
 
+'''
 with open('../Data/nearby-indicators.csv', newline='') as csvfile:
     lines = csv.reader(csvfile, delimiter=',')
     for line in lines:
@@ -17,7 +19,7 @@ with open('../Data/nearby-indicators.csv', newline='') as csvfile:
         text.append(line[3])
         scrambles.append(line[2])
         line_count += 1
-
+'''
 total_correct = 0
 total = 0
 
@@ -30,7 +32,8 @@ machine = EnigmaMachine.from_key_sheet(
 
 machine.set_display('WJF')
 
-for line in range(2):
+'''
+for line in range(1):
     decrypted_text = machine.process_text(scrambles[line])
 
     for t_char, s_char in zip(text[line], decrypted_text):
@@ -39,3 +42,7 @@ for line in range(2):
         total += 1
 
 print("Accuracy: " + str(total_correct / total))
+'''
+
+encrypted_text = machine.process_text(text[0])
+print("Encrypted Text: " + encrypted_text)

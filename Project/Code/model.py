@@ -154,7 +154,7 @@ def main():
     line_count = 0
     
     # Read in data
-    with open('../Data/basic_processed.csv', newline='') as csvfile:
+    with open('../Data/basic_processed_2.csv', newline='') as csvfile:
         lines = csv.reader(csvfile, delimiter=',')
         for line in lines:
             if firstline:
@@ -164,10 +164,10 @@ def main():
             scrambles.append(line[1])
             line_count += 1
 
-    training_text = text[:100]
-    training_scrambles = scrambles[:100]
-    validation_text = text[100:line_count]
-    validation_scrambles = scrambles[100:line_count]   
+    training_text = text[:1000]
+    training_scrambles = scrambles[:1000]
+    validation_text = text[1000:line_count]
+    validation_scrambles = scrambles[1000:line_count]   
 
     # Tokenizer setup
     char_list = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.!?;:'\"- \n")
@@ -191,7 +191,7 @@ def main():
     loss = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-    for epoch in range(25):
+    for epoch in range(15):
         model.train()
         total_loss = 0.0
         total_tokens = 0
