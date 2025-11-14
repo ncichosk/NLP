@@ -1,0 +1,448 @@
+Greedy Decoding Outputs:
+
+Context 1:
+Rick grew up in a troubled household. He was a high school dropout, and he was a high school dropout. He was a high school dropout. He was a high school dropout. He was a high school dropout
+
+Context 2:
+Laverne needs to prepare something for her friend's party.
+
+"I'm not going to be able to do that," she says. "I'm not going to be able to do that. I'm not going to be able to do that.
+
+Context 3:
+Sarah had been dreaming of visiting Europe for years.
+
+"I was so excited to see the world, but I was also so scared of what I was going to see," she said.
+
+"I was so scared of what I was
+
+Context 4:
+Gina was worried the cookie dough in the tube would be gross.
+
+"I was like, 'Oh my God, I'm going to have to eat this,'" she said. "I was like, 'I'm going to have to eat this.' I
+
+Context 5:
+It was  my final performance in marching band. I was so happy to be back in the band. I was so happy to be back in the band. I was so happy to be back in the band. I was so happy to be back
+
+Context 6:
+Jim found an old disposable camera in the bottom of his junk drawer. He took it out and took a picture of it. He took a picture of it and took a picture of it and took a picture of it and took a picture of it and took a picture of
+
+Context 7:
+Ron started his new job as a landscaper today.
+
+"I'm a big fan of the outdoors," he said. "I love the outdoors. I love the outdoors. I love the outdoors. I love the outdoors. I love the outdoors
+
+Context 8:
+John and Billy became very skilled at beer pong. They were also very good at playing the piano.
+
+"I was a little bit nervous about the music, but I was able to play it. I was able to play it for a while
+
+Context 9:
+Caroline was a student in medical school. She was a member of the medical staff at the hospital. She was a member of the medical staff at the hospital. She was a member of the medical staff at the hospital. She was a member
+
+Context 10:
+Trish hated the outdoors. She was a little bit of a outdoorsy person, but she was also a little bit of a outdoorsy person. She was a little bit of a outdoorsy person. She was a little bit
+
+Context 11:
+Tony was happy to be going on his first cruise.
+
+"I was really excited to be back in the Navy," he said. "I was really excited to be back in the Navy. I was really excited to be back in the Navy.
+
+Context 12:
+Ignacio wants to play a sport while he is in college.
+
+"I'm not going to play football," he said. "I'm not going to play basketball. I'm not going to play baseball. I'm not going to play baseball. I
+
+Context 13:
+Danny bought a boat.
+
+"I'm not going to be able to do that," he said. "I'm not going to be able to do that. I'm not going to be able to do that.
+
+Context 14:
+At school, Mary received an assignment to write an essay about pandas. She was told that she would have to write a letter to the editor of the journal, which would be sent to the editor's office.
+
+"I was told that I would have to write
+
+Context 15:
+Ellen dreamed of winning a prize for her roses.
+
+"I was so excited to win a prize for my roses," she said. "I was so excited to win a prize for my roses."
+
+She said she was so excited to
+
+Context 16:
+Jesse had just started fifth grade. He was a little bit older than me, but he was a good kid. He was a good kid. He was a good kid. He was a good kid. He was a good kid.
+
+Context 17:
+Tiffany was getting overwhelmed at work. She was so overwhelmed that she couldn't even get up. She was so overwhelmed that she couldn't even get up.
+
+"I was so overwhelmed that I couldn't even get up," she
+
+Context 18:
+Gina misplaced her phone at her grandparents.
+
+"I'm sorry, I'm sorry," she said. "I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I'm sorry. I
+
+Context 19:
+Alice was getting married in a few weeks. She was a little nervous, but she was happy. She was happy to be with her husband. She was happy to be with her husband. She was happy to be with her husband. She was
+
+Context 20:
+Ted loves to go to the movies. He's a big fan of the show. He's a big fan of the show. He's a big fan of the show. He's a big fan of the show. He's a big
+
+Context 21:
+Nya had been asked on a paintball trip with friends.
+
+"I was just trying to get a picture of the place," she said. "I was just trying to get a picture of the place. I was just trying to get a picture of
+
+Context 22:
+All of Javier's friends at school have smartphones. He's a big fan of the iPhone, and he's been using it for a while.
+
+"I've been using it for a while, and I've been using it for a while
+
+Context 23:
+Rachel decided to donate blood at the local blood drive.
+
+"I was just so excited to see what I could do," she said. "I was so excited to see what I could do."
+
+The blood drive was held at the University
+
+Context 24:
+Ron was watching a high-speed chase on TV. He was watching a high-speed chase on TV.
+
+"I was watching a high-speed chase on TV," he said. "I was watching a high-speed chase on TV."
+
+Context 25:
+Sam loved his old belt. He was a good guy. He was a good guy. He was a good guy. He was a good guy. He was a good guy. He was a good guy. He was a good
+
+Context 26:
+Larry bought a new motorcycle.
+
+"I'm not sure if I'm going to be able to do it," he said. "I'm not sure if I'm going to be able to do it."
+
+He
+
+Context 27:
+I went on a blind date a few days ago. I was so excited to see her. I was so excited to see her. I was so excited to see her. I was so excited to see her. I was so excited to see her.
+
+Context 28:
+Sammy's coffee grinder was broken.
+
+"I'm sorry, but I'm not going to do this again," she said.
+
+"I'm sorry, but I'm not going to do this again," he said.
+
+Context 29:
+Last week Jared was driving to work. He was driving to work. He was driving to work. He was driving to work. He was driving to work. He was driving to work. He was driving to work. He was driving to
+
+Context 30:
+Joe grew a big batch of peas in his garden. He was a little bit of a chicken, but he was a good chicken. He was a good chicken. He was a good chicken. He was a good chicken. He was a good chicken.
+
+Context 31:
+Aliza had a long lost ex-boyfriend she was bound to find. She was a very good girl, but she was also a very bad girl. She was a very bad girl. She was a very bad girl. She was a very bad girl. She was a
+
+Context 32:
+Lina went to see how candy canes were made. She was told that the candy was made from a variety of different types of candy, and that the candy was made from a variety of different types of candy. She was told that the candy was made
+
+Context 33:
+When I first moved into my house, I didn't know my neighbors. I didn't know what to do with my life. I didn't know what to do with my family. I didn't know what to do with my friends. I didn't know what to do
+
+Context 34:
+Bev had been studying very hard. He had been studying for a long time. He had been studying for a long time. He had been studying for a long time. He had been studying for a long time. He had been studying
+
+Context 35:
+We went to Frank Pepe's pizza shop three weeks ago. He was a very nice guy. He was very nice to me. He was very nice to me. He was very nice to me. He was very nice to me. He was very nice to
+
+Context 36:
+Bernice always wanted to travel to Africa. She was a very good cook. She was very good at cooking. She was very good at cooking. She was very good at cooking. She was very good at cooking. She was very good at
+
+Context 37:
+Jim made spinach cookies.
+
+I'm not sure if I'm going to make them again, but I'm going to try.
+
+I'm going to try them.
+
+I'm going to try them.
+
+Context 38:
+Randy's friend gave him directions to his house.
+
+"I'm going to go to the bathroom," Randy said. "I'm going to go to the bathroom."
+
+Randy said he was going to go to the bathroom.
+
+
+Context 39:
+I decided to go on a bike ride with my brother. I was so excited to get back to the city. I was so excited to get back to the city. I was so excited to get back to the city. I was so excited to get back
+
+Context 40:
+Anna went to the salon.
+
+"I'm sorry, but I'm not going to be able to do this," she said. "I'm not going to be able to do this."
+
+She said she was
+
+Context 41:
+David and Sarah were friends during childhood.
+
+"I was always very close to Sarah," she said. "She was always very kind and kind to me. She was always very kind to me. She was always very kind to me
+
+Context 42:
+AJ and his mom were at the grocery store.
+
+"I was like, 'What the hell is going on?'" said J.J.
+
+J.J. said he was driving to the grocery store when he saw a man with
+
+Context 43:
+Joe went to the junkyard to find treasures. He found a large, dark, and very large, wooden box with a large, very large, wooden box with a large, very large, wooden box with a large, very large, wooden box
+
+Context 44:
+Priya decided to try a new restaurant.
+
+"I was looking for a place to eat and I found a place that was open 24 hours a day. I was very happy with the food and the atmosphere," he said.
+
+
+
+Context 45:
+Karen was assigned a roommate her first year of college. She was a student at the University of California, Berkeley, and was a member of the student body. She was a member of the student body for two years. She was a member of the student
+
+Context 46:
+We took a family vacation to the beach last year. We were in the middle of a storm and we were just about to leave when we heard a loud bang. We were just about to leave when we heard a loud bang. We were just about to
+
+Context 47:
+Donald was kind of the class clown. He was a little bit of a clown. He was a little bit of a clown. He was a little bit of a clown. He was a little bit of a clown. He was a little
+
+Context 48:
+Eddie and Angela hadn't been talking to each other for a long time.
+
+"I'm sorry, but I'm not going to be able to talk to you again," she said.
+
+"I'm sorry, but I'm not going to be able to
+
+Context 49:
+Rachel adopted a cat over ten Years ago.
+
+"I'm not sure if I'm going to be able to do it again," she said. "I'm not sure if I'm going to be able to do it again."
+
+
+Context 50:
+Jim is a new driver and has never been pulled over before. He is a very good driver and has a great attitude. He is a very good person. He is very nice and very nice. He is very nice and very nice. He is very nice and
+
+Context 51:
+I love avocados. I love the taste of the avocado. I love the taste of the avocado. I love the taste of the avocado. I love the taste of the avocado. I love the taste of the avocado.
+
+Context 52:
+David was an author that had trouble finding inspiration for his work. He was a writer who had trouble finding inspiration for his work. He was a writer who had trouble finding inspiration for his work. He was a writer who had trouble finding inspiration for his work. He
+
+Context 53:
+Boris was addicted to video games. He was a member of the "Boris Party" and was a member of the "Boris Party" in the 1990s. He was a member of the "Boris Party" in the
+
+Context 54:
+A police officer came down with the flu today. He was taken to the hospital.
+
+The man was taken to the hospital with a serious head injury.
+
+The man was taken to the hospital with a serious head injury.
+
+The
+
+Context 55:
+My friend nathan and his family went to the lake one summer. They were in the middle of the lake when they heard a noise. They ran to the lake and saw a man in a white shirt and a black shirt. They ran to the lake and saw a
+
+Context 56:
+Gary was a brave child. He was a good kid. He was a good kid. He was a good kid. He was a good kid. He was a good kid. He was a good kid. He was a good
+
+Context 57:
+Timmy was caught with unpaid parking tickets.
+
+"I'm not going to be able to pay them," he said. "I'm not going to be able to pay them. I'm not going to be able to pay them.
+
+Context 58:
+When I was younger, I went to summer camp. I was a little bit older, but I was still a little bit of a kid. I was still a little bit of a kid. I was still a little bit of a kid. I was
+
+Context 59:
+Amber had a lot of things to do this Sunday. She was in the hospital for a couple of days, and she was in a coma. She was in a coma for a couple of days. She was in a coma for a couple of days.
+
+Context 60:
+Eve needed a new couch in her parlor. She had to find a new place to live.
+
+"I'm not going to be able to live in a house that's not my own," she said. "I'm not going to
+
+Context 61:
+Jason was terrified of spiders. He was scared of spiders. He was scared of spiders. He was scared of spiders. He was scared of spiders. He was scared of spiders. He was scared of spiders. He was scared of
+
+Context 62:
+Linda began to have problems with a coworker at her job. She was upset that she was being treated like a criminal. She was upset that she was being treated like a criminal.
+
+"I was like, 'I'm not going to do this anymore
+
+Context 63:
+Sara wanted her kids to have a great Christmas.
+
+"I was like, 'I'm going to have to do this,'" she said. "I was like, 'I'm going to have to do this.'"
+
+She said she
+
+Context 64:
+Megan has been struggling with a drug habit for years.
+
+"I'm not going to lie, I'm not going to lie to you," she said. "I'm not going to lie to you. I'm not going to lie to you
+
+Context 65:
+Tyler has been unemployed for Years.
+
+"I'm not going to be able to do anything for a while," he said. "I'm not going to be able to do anything for a while. I'm not going to
+
+Context 66:
+Bobby was having a birthday party. He was wearing a white T-shirt and a black T-shirt. He was wearing a black T-shirt and a black T-shirt. He was wearing a black T-shirt and a
+
+Context 67:
+It was the last day of our vacation. I was going to go to the beach and I was going to go to the beach and I was going to go to the beach and I was going to go to the beach and I was going to
+
+Context 68:
+Mother asked the children to help fold laundry.
+
+"I'm not going to let you do that," she said. "I'm not going to let you do that."
+
+The children were told to keep their hands on the laundry
+
+Context 69:
+Timmy loves watching cartoons. He's a big fan of the show and he's always been a fan of the show. He's a big fan of the show and he's always been a fan of the show. He's
+
+Context 70:
+My daughter had her baby shower in our Boston home. She was so excited to have a baby. She was so excited to have a baby. She was so excited to have a baby. She was so excited to have a baby. She was so excited
+
+Context 71:
+Pam's house was where the party was.
+
+"I was in the house when I heard the gunshots," she said. "I was in the house when I heard the gunshots. I was in the house when I heard the gunshots."
+
+Context 72:
+Ellen always hated school. She was a little bit of a loser. She was a little bit of a loser. She was a little bit of a loser. She was a little bit of a loser. She was a little
+
+Context 73:
+Jim got his first credit card in college. He's a good guy. He's a good guy. He's a good guy. He's a good guy. He's a good guy. He's a good guy. He's a good
+
+Context 74:
+Tim was entering a baking contest.
+
+"I'm not going to be able to do that," he said. "I'm not going to be able to do that. I'm not going to be able to do that.
+
+Context 75:
+My two year old son refused to wear training pants. He was so scared of the trainers that he didn't even wear them. He was so scared of the trainers that he didn't even wear them. He was so scared of the trainers that he didn
+
+Context 76:
+Holly was glad to be safely inside her house as the storm raged.
+
+"I'm glad to be safe," she said. "I'm glad to be safe. I'm glad to be safe. I'm glad to be safe. I'm glad to be
+
+Context 77:
+Jill saw an infomercial for unbreakable glass cups. "I'm going to have to get a glass of water," she said. "I'm going to have to get a glass of water."
+
+"I'm going to have to get a
+
+Context 78:
+Addie was working at the mall at Hollister when a strange man came in. He was wearing a black hoodie and a black shirt. He was wearing a black hoodie and a black shirt. He was wearing a black hoodie and a black shirt. He was wearing a
+
+Context 79:
+Sean was going for a job interview. He was going to be a part of the team. He was going to be a part of the team. He was going to be a part of the team. He was going to be a part
+
+Context 80:
+Fred made a bet with Sam over who could lose more weight in a month.
+
+"I'm not going to lie, I'm not going to lie," he said. "I'm not going to lie. I'm not going to lie. I'm not going to
+
+Context 81:
+John went skydiving for the first time.
+
+"I was just trying to get my head around it," he said. "I was just trying to get my head around it. I was just trying to get my head around it.
+
+Context 82:
+Gina and her family were leaving the park.
+
+"I was just trying to get out of there," she said. "I was just trying to get out of there. I was just trying to get out of there. I was just
+
+Context 83:
+Kaya needed to buy a new dress for the upcoming Spring Formal.
+
+"I'm not sure if I'm going to be able to wear it, but I'm going to be able to wear it," he said. "I'm going to be able to
+
+Context 84:
+Tyler wanted to have a balloon party with tons of balloons. He wanted to have a balloon party with tons of balloons. He wanted to have a balloon party with tons of balloons. He wanted to have a balloon party with tons of balloons. He wanted to have
+
+Context 85:
+Jimmy went skateboarding this afternoon. He's a big guy, he's a big guy, he's a big guy. He's a big guy. He's a big guy. He's a big guy. He's a big
+
+Context 86:
+Maxine usually hates to shave her legs. She's not a big fan of the idea of shaving her legs, but she's not a big fan of the idea of shaving her legs.
+
+She's not a big fan of the idea
+
+Context 87:
+Ryan loved to customize his bike. He loved to ride it. He loved to ride it. He loved to ride it. He loved to ride it. He loved to ride it. He loved to ride it. He loved to ride
+
+Context 88:
+One day I wanted to cook a nice dinner for my family. I had a great time. I had a great time. I had a great time. I had a great time. I had a great time. I had a great time. I had a great
+
+Context 89:
+Nick was challenged to a volleyball match.
+
+"I'm not going to lie, I was really excited to play against him," said the 6-foot-3, 220-pounder. "I was really excited to play against
+
+Context 90:
+Some friends and I made a Counter-Strike team. We were all in the same room, and we were all in the same room. We were all in the same room. We were all in the same room. We were all in the same room
+
+Context 91:
+Michelle found a fat tuxedo cat outside her house. She was so excited to see it, she went to the bathroom and found it. She was so excited to see it, she went to the bathroom and found it.
+
+"I was like
+
+Context 92:
+Neil was visiting Ireland.
+
+"I was in Dublin and I was in the airport and I was in the airport and I was in the airport and I was in the airport and I was in the airport and I was
+
+Context 93:
+Mary went to the park.
+
+"I was just thinking, 'What's going on?' " she said. "I was like, 'What's going on?' "
+
+She said she was in the park with
+
+Context 94:
+Scott knew someone was stealing packages from his porch.
+
+"I was like, 'Oh my God, I'm going to get this,'" he said. "I was like, 'I'm going to get this.'"
+
+The man was
+
+Context 95:
+Colin was invited to the bar by his friends. He was a good guy, but he was also a very drunk. He was very drunk. He was very drunk. He was very drunk. He was very drunk. He was very drunk. He
+
+Context 96:
+Jordan was planning on moving to Mexico.
+
+"I'm not going to be able to play in the United States," he said. "I'm not going to be able to play in Mexico. I'm not going to be able
+
+Context 97:
+Fred is brand new to exercising and just joined a gym. He's a great guy and he's a great person. He's a great guy. He's a great guy. He's a great guy. He's a great guy. He's a great
+
+Context 98:
+It was the second match of the volleyball season.
+
+"I think it was a good match," said coach Mike Krzyzewski. "I think it was a good game. I think it was a good game. I think it was
+
+Context 99:
+Ellen had had four miscarriages in a row.
+
+"I'm not sure I'm going to be able to get pregnant again," she said.
+
+"I'm not sure I'm going to be able to get pregnant again. I
+
+Context 100:
+David asked his mother if he could pour his own drink.
+
+"I'm not going to drink it," he said. "I'm not going to drink it."
+
+The family's lawyer, David B. Smith, said the family was "
+
