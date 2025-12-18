@@ -7,6 +7,7 @@ import torch.nn as nn
 import torch.optim as optim
 import math
 from tokenizers import Tokenizer, models, pre_tokenizers, decoders
+from tqdm import tqdm
 
 class PositionalEncoding(torch.nn.Module):
     def __init__(self, embed_dim: int, max_len=5000):
@@ -73,9 +74,9 @@ class MaskedMultiHeadAttention(nn.Module):
         return output
 
 class Encoder(nn.Module):
-    def __init__(self, embed_dim: int, ff_dim: int):
+    def __init__(self, embed_dim: int, ff_dim: int, num_heads: int = 1):
         super(Encoder, self).__init__()
-        self.self_attn = MaskedMultiHeadAttention(embed_dim, num_heads=1) # Only 1 head makes sense for this data
+        self.self_attn = MaskedMultiHeadAttention(embed_dim, num_heads=num_heads)
         self.feed_forward = FeedForward(embed_dim, ff_dim)
         self.layer_norm1 = nn.LayerNorm(embed_dim)
         self.layer_norm2 = nn.LayerNorm(embed_dim)
@@ -93,10 +94,10 @@ class Encoder(nn.Module):
         return self.layer_norm3(ff)
 
 class Decoder(nn.Module):
-    def __init__(self, embed_dim: int, ff_dim: int):
+    def __init__(self, embed_dim: int, ff_dim: int, num_heads: int = 1):
         super(Decoder, self).__init__()
-        self.self_attn = MaskedMultiHeadAttention(embed_dim, num_heads=1) # Only 1 head makes sense for this data
-        self.cross_attn = MaskedMultiHeadAttention(embed_dim, num_heads=1)
+        self.self_attn = MaskedMultiHeadAttention(embed_dim, num_heads=num_heads)
+        self.cross_attn = MaskedMultiHeadAttention(embed_dim, num_heads=num_heads)
         self.feed_forward = FeedForward(embed_dim, ff_dim)
         self.layer_norm1 = nn.LayerNorm(embed_dim)
         self.layer_norm2 = nn.LayerNorm(embed_dim)
@@ -122,30 +123,55 @@ class Decoder(nn.Module):
         return ff
 
 class Model(nn.Module):
-    def __init__(self, src_vocab_size: int, tgt_vocab_size: int, embed_dim: int, ff_dim: int):
+    def __init__(self, src_vocab_size: int, tgt_vocab_size: int, embed_dim: int, ff_dim: int,
+                 num_encoder_layers: int = 1, num_decoder_layers: int = 1, num_heads: int = 1):
         super(Model, self).__init__()
 
         self.src_embedding = Embedding(src_vocab_size, embed_dim)
         self.tgt_embedding = Embedding(tgt_vocab_size, embed_dim)
-        self.encoder = Encoder(embed_dim, ff_dim)
-        self.decoder = Decoder(embed_dim, ff_dim)
+
+        # Stacked encoders and decoders
+        self.encoders = nn.ModuleList([Encoder(embed_dim, ff_dim, num_heads=num_heads)
+                                       for _ in range(num_encoder_layers)])
+        self.decoders = nn.ModuleList([Decoder(embed_dim, ff_dim, num_heads=num_heads)
+                                       for _ in range(num_decoder_layers)])
+
         self.out_proj = torch.nn.Linear(embed_dim, tgt_vocab_size)
 
     def encode(self, src_seq):
         src_embs = self.src_embedding(src_seq)
-        src_encs = self.encoder(src_embs)
-        return src_encs
+        # pass through stacked encoders
+        enc = src_embs
+        for layer in self.encoders:
+            enc = layer(enc)
+        return enc
     
     def decode(self, src_encs, tgt_seq):
         tgt_embs = self.tgt_embedding(tgt_seq)
-        tgt_encs = self.decoder(src_encs, tgt_embs)
-        return tgt_encs
+        dec = tgt_embs
+        for layer in self.decoders:
+            dec = layer(src_encs, dec)
+        return dec
 
     def forward(self, src_seq, tgt_seq):
         src_encs = self.encode(src_seq)
         tgt_encs = self.decode(src_encs, tgt_seq)
         output = self.out_proj(tgt_encs)
         return output
+
+
+
+
+
+
+############################################################################################
+# Main function to train and test the model
+############################################################################################
+
+
+
+
+
 
 def main():
     text = []
@@ -164,13 +190,16 @@ def main():
             scrambles.append(line[1])
             line_count += 1
 
-    training_text = text[:1000]
-    training_scrambles = scrambles[:1000]
-    validation_text = text[1000:line_count]
-    validation_scrambles = scrambles[1000:line_count]   
+    cap_point = int(1 * line_count)
+    split_point = int(0.8 * cap_point)
+
+    training_text = text[:split_point]
+    training_scrambles = scrambles[:split_point]
+    validation_text = text[split_point:cap_point]
+    validation_scrambles = scrambles[split_point:cap_point]   
 
     # Tokenizer setup
-    char_list = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.!?;:'\"- \n")
+    char_list = list(" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.!?;:'\"-\n")
     special_tokens = ["[UNK]"]
     final_vocab_list = special_tokens + list(set(char_list))
     vocab_dict = {token: i for i, token in enumerate(final_vocab_list)}
@@ -184,18 +213,27 @@ def main():
     tgt_vocab_size = len(final_vocab_list)
     embed_dim = 128 
     ff_dim = 512
+    encoders_num = 4
+    decoders_num = 4
+    num_heads = 4
 
     # Training setup
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    model = Model(src_vocab_size, tgt_vocab_size, embed_dim, ff_dim).to(device)
+    model = Model(src_vocab_size, tgt_vocab_size, embed_dim, ff_dim, encoders_num, decoders_num, num_heads).to(device)
     loss = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-    for epoch in range(15):
+    print(f"Training on {device}")
+    for epoch in range(10):
         model.train()
         total_loss = 0.0
         total_tokens = 0
-        for i in range(len(training_text)):
+
+        train_iterator = tqdm(range(len(training_text)), 
+                                    desc=f"Epoch {epoch+1}/{10}", 
+                                    leave=False)
+
+        for i in train_iterator:
             src_text = training_scrambles[i]
             tgt_text = training_text[i]
 
@@ -266,7 +304,11 @@ def main():
             total_chars += total
             #print(f'Sample {i+1} Token Accuracy (Teacher-Forced): {accuracy:.4f} ({correct}/{total})')
 
-        avg_accuracy = total_correct_tokens / total_chars
+        if total_chars > 0: 
+            avg_accuracy = total_correct_tokens / total_chars
+        else:
+            avg_accuracy = 0.0
+            print(f'No characters to evaluate. {total_chars} characters in total. {total_correct_tokens} correct tokens.')
         print(f'Overall Token Accuracy: {avg_accuracy:.4f} ({total_correct_tokens}/{total_chars})')
 if __name__ == '__main__':
     main()
